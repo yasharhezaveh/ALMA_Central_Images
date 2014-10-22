@@ -3,6 +3,9 @@
 
 Investigating the prospects of detecting central images of lensed systems with ALMA.
 
+[Draft paper](https://github.com/yasharhezaveh/ALMA_Central_Images/raw/master/ms.pdf)
+
+Please send any comments or queries via this repository's [issues](https://github.com/yasharhezaveh/ALMA_Central_Images/issues) - thanks!
 
 
 ### Authors, Accreditation etc
