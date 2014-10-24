@@ -22,7 +22,7 @@ We find that over a large range of acceptable parameters, future deep observatio
 
 \end{abstract}
 
-in Ferarrese 2006, $r_b$ varies from ~50 to 500 pc. 
+%in Ferarrese 2006, $r_b$ varies from ~50 to 500 pc. 
 
 
 \keywords{ black hole physics ---
@@ -103,7 +103,29 @@ motivation and description of the paper: \\ \\
 
 \section{Simulations}
 \begin{framed} description
-\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ 
+We generate mock data cubes of gas emission in the source galaxy, lens the data cubes with a foreground halo, predict the ALMA visibilities, and use the visibilities to estimate the detection significance of the central image for various parameters. 
+The gas in the source galaxy is modeled as a collection of 5 Gaussian clumps with FWHM of XX, distributed over XX kpc and each separated in a different channel.
+and an intrinsic velocity dispersion  of 10 $km/s$ (FWHM) similar to observations of \citet{Davis:13}. 
+The choice of two discrete rings is made to enforce resolving the inner 50 pc region for a black hole mass measurement. We point out, however, that assuming a more general case (e.g. an exponential disk) does not change the results \citep[see Figure 2 of ][]{Davis:2014}.
+The velocity integrated flux of the circumnuclear ring is set to 4 $mJy\, km/s$. 
+This value is calculated by scaling the flux of the circumnuclear CO gas in Arp 220 to to z=2 \citep{Sakamoto:99}.
+The rings are concentric and in circular orbits. The rotational velocity of each point in the rings is calculated based on the enclosed mass contributed from the galaxy mass model and the mass of the central black hole. The black hole is given a mass of $M_{\mathrm{BH}}=5\times 10^{8} M_{\odot}$.
+We model the galaxy density with an isothermal profile ($\rho\propto r^{-2}$) with a central velocity dispersion of 200 km/s. 
+The line-of-sight velocities are calculated to generate a frequency-position data cube. Figure \ref{f:f1} shows a velocity-position diagram extracted from the data cube. The data comprises 100 frequency channels covering 800 km/s. 
+
+
+Each layer of the data cube is lensed with the foreground halo to  generate a lensed cube. We use a Singular Isothermal Ellipsoid (SIE) mass model for the lens galaxy \citep[$\rho\propto r^{-2}$,][]{Kormann:94}, placed at $z_l=0.5$ and place the source at $z_s=2.0$. The central velocity dispersion of the lens is set to 180 $km/s$, which is typical for galaxy-galaxy lensing systems \citep[e.g.][]{hezaveh:13b}. 
+
+
+To predict the visibilities we calculate the ALMA $uv$-coverage for a 5-$hr$ long observation with the most extended antenna configuration (full array), using the $simobserve$ task of Common Astronomy Software Applications package, which results in an angular resolution of $\sim20\, \, milli$-$arcsec$ at an observing frequency of 240 GHz. 
+The visibilities for each channel are calculated by computing the 2D Fourier transform of the corresponding layer of the data cube and resampling the Fourier transform maps over the uv-coverage. 
+The noise is estimated using ALMA sensitivity calculator for a channel width of 8 km/s at 240 GHz. 
+We use finite differencing of visibilities to calculate the Fisher information and the parameter covariance matrix to calculate the significance of black hole mass measurement.
+
+When the background source only consists of the two rings described above, the lens model parameters have large uncertainties and are mildly degenerate with the mass of the black hole. 
+A realistic source galaxy, however, will consists of many other components, extended over kilo-parsec scales, which if included in lens models, can strongly constrain the lens parameters.
+We run five simulations in which the background source is embedded in an extended Gaussian clump with a radius of 1 kpc and a flux of 1 Jy km/s \citep[typical for SMGs, see][]{Bothwell:12}. We find that in these simulations, the lens parameters are extremely constrained and the effect of marginalization over them barely reduces the significance of black hole mass measurements ($\lesssim 0.05\, \sigma$). This suggests that when the full structure of the source galaxies are included in models, the lens parameters do not significantly contribute to the black hole mass uncertainties. Therefore, to reduce the computational cost of simulations, we do not marginalize over the lens parameters.
+%\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ 
 \end{framed}
 
 
@@ -128,7 +150,7 @@ motivation and description of the paper: \\ \\
 \begin{figure}
 \begin{center}
 \centering
-\includegraphics[trim= 0 0 0 0, width=0.45\textwidth]{figures/f_01.eps}
+\includegraphics[trim= 0 0 5 6, clip, width=0.45\textwidth]{figures/f_01.eps}
 \centering
 \end{center}
 \caption{ illustration of the central image in 2 cases: 
