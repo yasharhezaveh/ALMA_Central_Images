@@ -11,7 +11,7 @@
 \shortauthors{Y. Hezaveh}
 \begin{document}
 
-\title{Probing the inner kpc of massive lens galaxies with ALMA: Can the central images of strong lenses be detected?}
+\title{Probing the inner kpc of massive galaxies with strong gravitational lensing}
 \author{Yashar D. Hezaveh, Philip J. Marshall, Roger D. Blandford}  
 \affil{Kavli Institute for Particle Astrophysics and Cosmology, Stanford University, Stanford, CA, USA}
 
@@ -128,13 +128,39 @@ We run five simulations in which the background source is embedded in an extende
 %\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ 
 \end{framed}
 
-
+\newpage
 \section{Results and Discussions}
-%\begin{framed}
-%\end{framed}
+\begin{framed}
+\subsection{Detection of central images}
+1) We evaluate the detection significance of central images over a range of relevant parameters. \\ \\
+2) Figure 4 shows our results for a 10-hr long observation with ALMA\\ \\
+3) we show that, as expected, the image is fainter for steeper profile slopes. \\ \\
+4) the 0.9 value (combined with 0.1 DM) results in the isothermal profile, which has been shown to be consistent with strong lensing data \\ \\
+5) if that's the case, and in the absence of massive BHs, then stellar cores as small as $\sim80$ pc should allow a 5$\sigma$ detection of the central images. \\ \\
+5A) we note that for much shallower density profiles, the central image is actually \emph{magnified}, and therefore it's detection should be trivial.\\ \\
+6) the flux is significantly supressed by the central SMBH \\  \\
+7) the dashed curves show the same for a galaxy with a $2e8M_{\odot}$ SMBH. \\ \\
+8) we note that although for some parameter combinations (e.g., $\gamma_{s}=1.2,$ $M_{BH} = 2e8$,$R_{core}<300 pc$ ) there is no chance of detecting the central image, over a significant fraction of allowed parameters the central image could be detected. \\ \\
+9) to calculate this plot we have used a configuration XX, because: it allows us to resolve the central image (if existent), while it is more sensitive that more extended configurations.  In addition, this is the configuration that will be likely used for other projects/sciences.
+\end{framed}
 
-%\begin{framed}
-%\end{framed}
+\begin{framed}
+\subsection{SMBHs and the core size}
+1) in this section we study how well we can constrain the mass of the central black hole, the slope of the density and the size of the stellar core. \\ \\
+2) we choose a few models where the central image is detected OR not detected and use a Fisher analysis to determine the degeneracies between the parameters and the detection significance of each parameter.  \\ \\
+3) we note that in the Fisher analysis we include all nuisance parameters (e.g. source position, size, etc.) and marginalize over them  \\ \\
+4) Figure 4 shows the parameters for a case with $R_{core}$=180 pc, $M_{BH}=1e8$ and $\gamma=1$. As seen from Figure 3,  this parameter combination results in a faint ($\sim3\sigma$) detection of the central image. \\ \\
+5) we note that the black hole mass is degenerate with the core size: a larger core, results in a brighter image, which can be supressed by a more massive BH. \\ \\
+6) The Fisher data show that the black hole mass cannot be measured with high significance in such observations ($1.16\sigma$) \\ \\
+7) however, interestingly, the degeneracy of the black hole mass and the size of the central core breaks at the high end. and the stellar core is measured with XX $\sigma$\\ \\
+8) this is likely because a very large core results in a fairly extended central images, which could be \emph{resolved} (see Figure 1), in that case, the flux suppression by a crazy massive black hole will result in a distinct dip in the central image  which can be used to distinguish the two. \\ \\
+9) we note that the constraints in this case will be of similar strength to those of Winn 2004. \\ \\ 
+10) in the case of very small core, and a massive black hole (no detection of the image) we only get an upper limits of $\sim$ and $\sim$ for the two. \\ \\
+11) and in case with massive core and massive black hole we measure both with high significance. 
+12) we note that all these parameter combinations are plausible choices, and therefore long observations such as these will be able to either measure these parameters with confidence or place strong constraints on them.
+
+
+\end{framed}
 
 %\begin{framed}
 %\end{framed}
@@ -150,17 +176,6 @@ We run five simulations in which the background source is embedded in an extende
 \begin{figure}
 \begin{center}
 \centering
-\includegraphics[trim= 0 0 5 6, clip, width=0.45\textwidth]{figures/f_01.eps}
-\centering
-\end{center}
-\caption{ Model density profiles. The black dashed line shows the dark matter component, with a slope of 0.1, consistent with a projected NFW at the innermost regions. the grey dashed curves show cored-sersic five fits to stellar light profiles of massive galaxies from Ferrarese 2006. The red solid curve shows our cored-power-law model that we use to approximate this stellar component. The solid black line shows the total matter density (dark plus stellar) of our model. 
-\label{f:f2}}
-\end{figure}
-
-
-\begin{figure}
-\begin{center}
-\centering
 \includegraphics[trim= 0 0 0 0, width=0.45\textwidth]{figures/f_02.eps}
 \centering
 \end{center}
@@ -172,10 +187,23 @@ We run five simulations in which the background source is embedded in an extende
 \begin{figure}
 \begin{center}
 \centering
+\includegraphics[trim= 0 0 5 6, clip, width=0.45\textwidth]{figures/f_01.eps}
+\centering
+\end{center}
+\caption{ Model density profiles. The black dashed line shows the dark matter component, with a slope of 0.1, consistent with a projected NFW at the innermost regions. the grey dashed curves show cored-sersic five fits to stellar light profiles of massive galaxies from Ferrarese 2006. The red solid curve shows our cored-power-law model that we use to approximate this stellar component. The solid black line shows the total matter density (dark plus stellar) of our model. 
+\label{f:f2}}
+\end{figure}
+
+
+
+
+\begin{figure}
+\begin{center}
+\centering
 \includegraphics[trim= 0 0 0 0, width=0.45\textwidth]{figures/f_03.eps}
 \centering
 \end{center}
-\caption{ Significance of detection of the central image as a function of the stellar core size. The colors correspond to different slopes of the stellar component. The solid curves correspond to a case without a SMBH while the dashed line show the result of a simulation which includes a $2\times10^8M_{\odot}$ SMBH at its center.
+\caption{ Significance of detection of the central image as a function of the stellar core size for a 10-hr long ALMA observation. The colors correspond to different slopes of the stellar component. The solid curves correspond to a case without a SMBH while the dashed line show the result of a simulation which includes a $2\times10^8M_{\odot}$ SMBH at its center.
 \label{f:f2}}
 \end{figure}
 
