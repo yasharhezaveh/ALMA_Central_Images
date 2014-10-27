@@ -127,10 +127,10 @@ Deep ALMA observations of molecular lines in these sources are likely to be carr
 %\end{framed}
 
 \section{Simulations}
-We generate lensed images of background sources, predict ALMA visibilities, and use them to estimate the detection significance of central images for various parameters. We simulate the velocity integrated flux of a high J CO line. The line is assumed to have a velocity integrated flux of 1 Jy km/s and a FWHM of 400 km/s, resulting in an average flux of 2.5 mJy Jy over a XX km/s band. 
+We generate lensed images of background sources, predict ALMA visibilities, and use them to estimate the detection significance of central images for various parameters. We simulate observations of a high-$J$ CO line. The line is assumed to have a velocity integrated flux of 1 Jy km/s and a FWHM of 400 km/s, resulting in an average flux of 2.5 mJy over a XX km/s band. 
 
-We model the lens potential as a sum of three components: dark matter, stellar population and central SMBH. The dark matter is modeled as a singular power-law with a slope of 0.1, in agreement with the projected surface mass density of the NFW profile \citep{}. As by pointed out by \citep{Keeton:03}, due to its extreme flatness in these regimes, the dark matter component has negligible influence on the central images. 
-The stellar population is modeled as a a core power-law, $\Sigma\propto (r^2+s^2)^{\gamma}$. Figure \ref{fig2} shows the stellar component (red curve), dark matter component (black dashed curve) and the sum of the two (black solid curved). The grey dashed curves show a few example of core-sersic models with parameters from \citep{f06}. We note that although the cored power-law model used in this work does not account for the slope of the stellar distribution below the core break, it is a close fit and a reasonable model to approximate the observed stellar light profiles. 
+We model the lens potential as a sum of three components: dark matter, stellar population and central SMBH. The dark matter is modeled as a singular power-law with a slope of 0.1, in agreement with the projected surface mass density of the NFW profile \citep{Golse:02}. As by pointed out by \citep{Keeton:03}, due to its extreme flatness in these regimes, the dark matter component has negligible influence on the central images. 
+The stellar population is modeled as a a core power-law, $\Sigma\propto (r^2+s^2)^{\gamma}$. Figure \ref{fig2} shows the stellar component (red curve), dark matter component (black dashed curve) and the sum of the two (black solid curved). The grey dashed curves show a few example of core-sersic models with parameters taken from \citet{Ferrarese:06}. We note that although the cored power-law model used in this work does not account for the slope of the stellar distribution below the core break, it is a close fit and a reasonable model to approximate the observed stellar light profiles. 
 The black hole is modeled as a simple point mass at the center of the potential. In this work we assume that all the three components are concentric.
 
 The lens mass is set to XX $M_{\odot}$ resulting in an Einstein radius of $\sim XX''$, in agreement with galaxy-galaxy strong lenses. We divide this mass equally (in a radius of 10 kpc) between stellar and dark matter. 
@@ -215,7 +215,7 @@ For simulations where we calculate the detection significance of the demagnified
 \centering
 \end{center}
 \caption{ illustration of the central image in 2 cases: 
-\label{f:f2}}
+\label{fig1}}
 \end{figure}
 
 
@@ -226,7 +226,7 @@ For simulations where we calculate the detection significance of the demagnified
 \centering
 \end{center}
 \caption{ Model density profiles. The black dashed line shows the dark matter component, with a slope of 0.1, consistent with a projected NFW at the innermost regions. the grey dashed curves show cored-sersic five fits to stellar light profiles of massive galaxies from Ferrarese 2006. The red solid curve shows our cored-power-law model that we use to approximate this stellar component. The solid black line shows the total matter density (dark plus stellar) of our model. 
-\label{f:f2}}
+\label{fig2}}
 \end{figure}
 
 
