@@ -41,8 +41,8 @@ galaxies: high-redshift}
 
 \section{introduction}
 %\begin{framed}
-Probing the matter distribution in the innermost kpc of galaxies can answer key questions about super massive black holes (SMBH), galaxy formation, and dark matter. It is now established that almost every massive galaxy harbors a SMBH at its center \citep[][]{} with a mass that strongly correlates with the mass of the host galaxy.
-In addition, the distribution of stellar populations in central regions of galaxies contains information about their past merger histories and SMBH-stellar population interactions. \citep{}.  Various dark matter models also predict different structures for the central regions of dark matter halos \citep[e.g][]{rochaetal}.  Mapping the matter density in the central regions of galaxies can therefore shed light on various astrophysical phenomena.
+Probing the matter distribution in the innermost kpc of galaxies can answer key questions about super massive black holes (SMBH), galaxy formation, and dark matter. It is now established that almost every massive galaxy harbors a SMBH at its center with a mass that strongly correlates with the mass of the host galaxy \citep{Kormendy:95,Ferrarese:00,Gebhardt:00,Tremaine:02,Kormendy:13}.
+In addition, the distribution of stellar populations in central regions of galaxies contains information about their past merger histories and SMBH-stellar population interactions. \citep{}.  Various dark matter models also predict different structures for the central regions of dark matter halos \citep[e.g][]{Rocha:13}.  Mapping the matter density in the central regions of galaxies can thus shed light on various astrophysical phenomena.
 %probing the inner 0.5 kpc of galaxies is interesting. 1) they contain SMBHs and the relationship of the SMBH mass to galaxies is intriguing and interesting. Dark matter models also have different and interesting predictions for the density of the central regions of galaxies (e.g. cored DM, or SIDM predictions). In addition, the history of galaxy mergers and black hole-stellar population interactions can be encoded in the stellar light profiles, resulting in different stellar  
 %\end{framed}
 
@@ -51,7 +51,7 @@ In addition, the distribution of stellar populations in central regions of galax
 %\\ \\
 Morphological studies of galaxies in optical wavelengths have shown that, unlike their lower-mass counterparts, the most massive elliptical galaxies often exhibit cored stellar light profiles, with core sizes ranging from 50 to 500 pc \citep{e.g.ferrarese06}. 
 These galaxies are thought to form through gas-poor mergers. In such mergers, the central structure of the resulting galaxy is dominated by the inner structure of the more concentrated progenitor.  Since high-mass ellipticals are thought to form from mergers of their lower-mass counterparts, with steep profiles, the existence of cores in these galaxies represents a challenge to our understanding of galaxy mergers. Cores in massive ellipticals, therefore, should be the result of different (not merger) mechanisms.  
-``Black hole scouring'' is currently the only known plausible mechanism that could explain core-formation in these galaxies \citep{Thomas2014}.
+``Black hole scouring'' is currently the only known plausible mechanism that could explain core-formation in these galaxies \citep{Thomas:14}.
 %\end{framed}
 
 %\begin{framed}
@@ -78,8 +78,8 @@ If observed in optical, absorption in the central dense regions of the lens make
 
 %\begin{framed}
 \red{needs work}
-The individual behavior \citep{} and statistical properties of central images in lens populations have been extensively studied (e.g. Wallington 1993, Evans \& Hunter 2002, Keeton 2003),  suggesting that central images could have a wide range of magnifications. 
-Observational searches for these images have found a number of candidates \citep[e.g.][]{}, however, only one secure detection of a central image exists to date \citep{winn:2004}.
+The individual behavior \citep{} and statistical properties of central images in lens populations have been extensively studied \citep[e.g.][]{Wallington:93, Evans:02, Keeton:03},  suggesting that central images could have a wide range of magnifications. 
+Observational searches for these images have found a number of candidates \citep[e.g.][]{Inada:05}, however, only one secure detections of a central image of a galaxy-scale lens exists to date \citep{Winn:04}.\red{(Inada:08 is a cluster?)}
 To avoid the possibility of absorption in the lens, most studies have focused on strongly lensed radio quasars and the radio spectrum of candidate central images have been used to distinguish them from faint emission from the lens galaxies.
 
 %To avoid confusion between a central image and faint radio emission from the lens galaxies 
@@ -127,31 +127,39 @@ Deep ALMA observations of molecular lines in these sources are likely to be carr
 %\end{framed}
 
 \section{Simulations}
-\begin{framed} description
-We generate mock data cubes of gas emission in the source galaxy, lens the data cubes with a foreground halo, predict the ALMA visibilities, and use the visibilities to estimate the detection significance of the central image for various parameters. 
-The gas in the source galaxy is modeled as a collection of 5 Gaussian clumps with FWHM of XX, distributed over XX kpc and each separated in a different channel.
-and an intrinsic velocity dispersion  of 10 $km/s$ (FWHM) similar to observations of \citet{Davis:13}. 
-The choice of two discrete rings is made to enforce resolving the inner 50 pc region for a black hole mass measurement. We point out, however, that assuming a more general case (e.g. an exponential disk) does not change the results \citep[see Figure 2 of ][]{Davis:2014}.
-The velocity integrated flux of the circumnuclear ring is set to 4 $mJy\, km/s$. 
-This value is calculated by scaling the flux of the circumnuclear CO gas in Arp 220 to to z=2 \citep{Sakamoto:99}.
-The rings are concentric and in circular orbits. The rotational velocity of each point in the rings is calculated based on the enclosed mass contributed from the galaxy mass model and the mass of the central black hole. The black hole is given a mass of $M_{\mathrm{BH}}=5\times 10^{8} M_{\odot}$.
-We model the galaxy density with an isothermal profile ($\rho\propto r^{-2}$) with a central velocity dispersion of 200 km/s. 
-The line-of-sight velocities are calculated to generate a frequency-position data cube. Figure \ref{f:f1} shows a velocity-position diagram extracted from the data cube. The data comprises 100 frequency channels covering 800 km/s. 
+We generate lensed images of background sources, predict ALMA visibilities, and use them to estimate the detection significance of central images for various parameters. We simulate the velocity integrated flux of a high J CO line. The line is assumed to have a velocity integrated flux of 1 Jy km/s and a FWHM of 400 km/s, resulting in an average flux of 2.5 mJy Jy over a XX km/s band. 
 
+We model the lens potential as a sum of three components: dark matter, stellar population and central SMBH. The dark matter is modeled as a singular power-law with a slope of 0.1, in agreement with the projected surface mass density of the NFW profile \citep{}. As by pointed out by \citep{Keeton:03}, due to its extreme flatness in these regimes, the dark matter component has negligible influence on the central images. 
+The stellar population is modeled as a a core power-law, $\Sigma\propto (r^2+s^2)^{\gamma}$. Figure \ref{fig2} shows the stellar component (red curve), dark matter component (black dashed curve) and the sum of the two (black solid curved). The grey dashed curves show a few example of core-sersic models with parameters from \citep{f06}. We note that although the cored power-law model used in this work does not account for the slope of the stellar distribution below the core break, it is a close fit and a reasonable model to approximate the observed stellar light profiles. 
+The black hole is modeled as a simple point mass at the center of the potential. In this work we assume that all the three components are concentric.
 
-Each layer of the data cube is lensed with the foreground halo to  generate a lensed cube. We use a Singular Isothermal Ellipsoid (SIE) mass model for the lens galaxy \citep[$\rho\propto r^{-2}$,][]{Kormann:94}, placed at $z_l=0.5$ and place the source at $z_s=2.0$. The central velocity dispersion of the lens is set to 180 $km/s$, which is typical for galaxy-galaxy lensing systems \citep[e.g.][]{hezaveh:13b}. 
-
+The lens mass is set to XX $M_{\odot}$ resulting in an Einstein radius of $\sim XX''$, in agreement with galaxy-galaxy strong lenses. We divide this mass equally (in a radius of 10 kpc) between stellar and dark matter. 
 
 To predict the visibilities we calculate the ALMA $uv$-coverage for a 5-$hr$ long observation with the most extended antenna configuration (full array), using the $simobserve$ task of Common Astronomy Software Applications package, which results in an angular resolution of $\sim20\, \, milli$-$arcsec$ at an observing frequency of 240 GHz. 
 The visibilities for each channel are calculated by computing the 2D Fourier transform of the corresponding layer of the data cube and resampling the Fourier transform maps over the uv-coverage. 
 The noise is estimated using ALMA sensitivity calculator for a channel width of 8 km/s at 240 GHz. 
 We use finite differencing of visibilities to calculate the Fisher information and the parameter covariance matrix to calculate the significance of black hole mass measurement.
 
-When the background source only consists of the two rings described above, the lens model parameters have large uncertainties and are mildly degenerate with the mass of the black hole. 
-A realistic source galaxy, however, will consists of many other components, extended over kilo-parsec scales, which if included in lens models, can strongly constrain the lens parameters.
-We run five simulations in which the background source is embedded in an extended Gaussian clump with a radius of 1 kpc and a flux of 1 Jy km/s \citep[typical for SMGs, see][]{Bothwell:12}. We find that in these simulations, the lens parameters are extremely constrained and the effect of marginalization over them barely reduces the significance of black hole mass measurements ($\lesssim 0.05\, \sigma$). This suggests that when the full structure of the source galaxies are included in models, the lens parameters do not significantly contribute to the black hole mass uncertainties. Therefore, to reduce the computational cost of simulations, we do not marginalize over the lens parameters.
-%\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ 
-\end{framed}
+
+For simulations where we calculate the detection significance of the demagnified image, we compute the magnification at every pixel in the image plane and generate maps with and without the the demagnified flux and evaluate the detection significance of the central image by comparing the two images. In other simulations where the constrains on parameters are needed, we use a Fisher analysis to compute the full covariance of all parameters. We then marginalize over the nuisance parameters (e.g. source position, lens ellipticity) to calculate the marginalized likelihood of the relevant parameters. 
+
+%\begin{framed} description
+
+%The gas in the source galaxy is modeled as a collection of 5 Gaussian clumps with FWHM of XX, distributed over XX kpc and each separated in a different channel.
+%and an intrinsic velocity dispersion  of 10 $km/s$ (FWHM) similar to observations of \citet{Davis:13}. 
+%The choice of two discrete rings is made to enforce resolving the inner 50 pc region for a black hole mass measurement. We point out, however, that assuming a more general case (e.g. an exponential disk) does not change the results \citep[see Figure 2 of ][]{Davis:2014}.
+%The velocity integrated flux of the circumnuclear ring is set to 4 $mJy\, km/s$. 
+%This value is calculated by scaling the flux of the circumnuclear CO gas in Arp 220 to to z=2 \citep{Sakamoto:99}.
+%The rings are concentric and in circular orbits. The rotational velocity of each point in the rings is calculated based on the enclosed mass contributed from the galaxy mass model and the mass of the central black hole. The black hole is given a mass of $M_{\mathrm{BH}}=5\times 10^{8} M_{\odot}$.
+%We model the galaxy density with an isothermal profile ($\rho\propto r^{-2}$) with a central velocity dispersion of 200 km/s. 
+%The line-of-sight velocities are calculated to generate a frequency-position data cube. Figure \ref{f:f1} shows a velocity-position diagram extracted from the data cube. The data comprises 100 frequency channels covering 800 km/s. 
+
+
+%Each layer of the data cube is lensed with the foreground halo to  generate a lensed cube. We use a Singular Isothermal Ellipsoid (SIE) mass model for the lens galaxy \citep[$\rho\propto r^{-2}$,][]{Kormann:94}, placed at $z_l=0.5$ and place the source at $z_s=2.0$. The central velocity dispersion of the lens is set to 180 $km/s$, which is typical for galaxy-galaxy lensing systems \citep[e.g.][]{hezaveh:13b}. 
+
+
+
+%\end{framed}
 
 \newpage
 \section{Results and Discussions}
@@ -252,6 +260,8 @@ We run five simulations in which the background source is embedded in an extende
 \acknowledgements{
 }
 
+\bibliographystyle{apj}
+\bibliography{references}
 
 
 \end{document}
