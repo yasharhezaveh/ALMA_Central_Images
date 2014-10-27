@@ -126,6 +126,17 @@ Deep ALMA observations of molecular lines in these sources are likely to be carr
 %4) we use $\Lambda$CDM cosmology of XXX
 %\end{framed}
 
+\begin{figure}
+\begin{center}
+\centering
+\includegraphics[trim= 0 0 0 0, width=0.45\textwidth]{figures/f_02.eps}
+\centering
+\end{center}
+\caption{ illustration of the central image in 2 cases: 
+\label{fig1}}
+\end{figure}
+
+
 \section{Simulations}
 We generate lensed images of background sources, predict ALMA visibilities, and use them to estimate the detection significance of central images for various parameters. We simulate observations of a high-$J$ CO line. The line is assumed to have a velocity integrated flux of 1 Jy km/s and a FWHM of 400 km/s, resulting in an average flux of 2.5 mJy over a XX km/s band. 
 
@@ -142,6 +153,16 @@ We use finite differencing of visibilities to calculate the Fisher information a
 
 
 For simulations where we calculate the detection significance of the demagnified image, we compute the magnification at every pixel in the image plane and generate maps with and without the the demagnified flux and evaluate the detection significance of the central image by comparing the two images. In other simulations where the constrains on parameters are needed, we use a Fisher analysis to compute the full covariance of all parameters. We then marginalize over the nuisance parameters (e.g. source position, lens ellipticity) to calculate the marginalized likelihood of the relevant parameters. 
+
+\begin{figure}
+\begin{center}
+\centering
+\includegraphics[trim= 0 0 5 6, clip, width=0.45\textwidth]{figures/f_01.eps}
+\centering
+\end{center}
+\caption{ Model density profiles. The black dashed line shows the dark matter component, with a slope of 0.1, consistent with a projected NFW at the innermost regions. the grey dashed curves show cored-sersic five fits to stellar light profiles of massive galaxies from Ferrarese 2006. The red solid curve shows our cored-power-law model that we use to approximate this stellar component. The solid black line shows the total matter density (dark plus stellar) of our model. 
+\label{fig2}}
+\end{figure}
 
 %\begin{framed} description
 
@@ -161,7 +182,7 @@ For simulations where we calculate the detection significance of the demagnified
 
 %\end{framed}
 
-\newpage
+%\newpage
 \section{Results and Discussions}
 \begin{framed}
 \subsection{Detection of central images}
@@ -176,6 +197,17 @@ For simulations where we calculate the detection significance of the demagnified
 8) we note that, as pointed out in Keeton 2003, there's a large range of possibilities for plausible lens parameters: although for some parameter combinations (e.g., $\gamma_{s}=1.2,$ $M_{BH} = 2e8$,$R_{core}<300 pc$ ) there is no chance of detecting the central image, over a significant fraction of allowed parameters the central image could be detected. \\ \\
 9) to calculate this plot we have used a configuration XX, because: it allows us to resolve the central image (if existent), while it is more sensitive that more extended configurations.  In addition, this is the configuration that will be likely used for other projects/sciences.
 \end{framed}
+
+\begin{figure}
+\begin{center}
+\centering
+\includegraphics[trim= 0 0 0 0, width=0.45\textwidth]{figures/f_03.eps}
+\centering
+\end{center}
+\caption{ Significance of detection of the central image as a function of the stellar core size for a 10-hr long ALMA observation. The colors correspond to different slopes of the stellar component. The solid curves correspond to a case without a SMBH while the dashed line show the result of a simulation which includes a $2\times10^8M_{\odot}$ SMBH at its center.
+\label{f:f2}}
+\end{figure}
+
 
 \begin{framed}
 \subsection{SMBHs and the core size}
@@ -206,41 +238,14 @@ For simulations where we calculate the detection significance of the demagnified
 
 
 
-\newpage
-
-\begin{figure}
-\begin{center}
-\centering
-\includegraphics[trim= 0 0 0 0, width=0.45\textwidth]{figures/f_02.eps}
-\centering
-\end{center}
-\caption{ illustration of the central image in 2 cases: 
-\label{fig1}}
-\end{figure}
-
-
-\begin{figure}
-\begin{center}
-\centering
-\includegraphics[trim= 0 0 5 6, clip, width=0.45\textwidth]{figures/f_01.eps}
-\centering
-\end{center}
-\caption{ Model density profiles. The black dashed line shows the dark matter component, with a slope of 0.1, consistent with a projected NFW at the innermost regions. the grey dashed curves show cored-sersic five fits to stellar light profiles of massive galaxies from Ferrarese 2006. The red solid curve shows our cored-power-law model that we use to approximate this stellar component. The solid black line shows the total matter density (dark plus stellar) of our model. 
-\label{fig2}}
-\end{figure}
+%\newpage
 
 
 
 
-\begin{figure}
-\begin{center}
-\centering
-\includegraphics[trim= 0 0 0 0, width=0.45\textwidth]{figures/f_03.eps}
-\centering
-\end{center}
-\caption{ Significance of detection of the central image as a function of the stellar core size for a 10-hr long ALMA observation. The colors correspond to different slopes of the stellar component. The solid curves correspond to a case without a SMBH while the dashed line show the result of a simulation which includes a $2\times10^8M_{\odot}$ SMBH at its center.
-\label{f:f2}}
-\end{figure}
+
+
+
 
 
 \begin{figure}
