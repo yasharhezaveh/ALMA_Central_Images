@@ -99,20 +99,10 @@ A new large population of strong lenses has recently been discovered in mm-bands
 In particular, ALMA observations of these sources have revealed that the background galaxies are dusty, starburst, high redshift galaxies, containing a wealth of cold molecular gas \citep{Weiss:13}.  These observations showed that the extreme brightness of the sources in combination with the high sensitivity of ALMA results in very high signal to noise ratios \citep[e.g. the lens models in][were based on just $\sim50$ second long observations]{hezaveh:13b}.
 Motivated by the discovery of this population and the operation of ALMA, here we revisit the issue of detecting central images.
 Deep ALMA observations of molecular line emission in these sources are likely to be carried out for various reasons \citep[e.g.,][]{hezaveh:14a,hezaveh:14b}. If a central image of a lensed molecular line is detected, it will be readily identifiable since it will correspond to the redshift of the source, leaving no doubt about its origin. In addition, since these lines are in mm-bands, the line fluxes are very unlikely to be suppressed due to absorption in the lens. 
+In contrast to lensed quasars, these sources are extended over hundreds of parsecs and can cover a larger area of the source plane. This can allow them to occupy the less demagnified regions of the source plane, allowing a higher flux for the central image \citep[the opposite effect of magnification damping due to extended sources,, see e.g.][]{hezaveh:11}.
 
-%doesn't decrease due to absorption
-%little (if any) absorption in the lens, so the flux doesn't decrease due to absorption
-%Since the sources have many molecular lines. 
-%Describe the newly discovered population of mm lenses + ALMA's observations: \\  \\
-%1) strong lenses in mm were discovered (SPT, Herschel, etc.) \\ \\
-%2) ALMA observations confirmed that they're all lensed and that the sources are at high z \\ \\
-%3) because they were selected by flux, + the high sensitivity of ALMA $->$ SNR is high \\ \\
-%3B) we note that in a 10 hr long observation ALMA can achieve a sensitivity of order 0.0164 mJy in a 500 km/s bandwidth, since the background sources have typical (intrinsic) average line fluxes of order 2-3 mJy, such observations will be able to detect images with magnification as low as $10^{-2}$ \\ \\
-%4) the sources have many molecular lines. If a central image of a \emph{molecular line} is observed it will be easily identifiable since it corresponds to the redshift of the source, and there will be no confusion that it may be associated with the lens. \\ \\
-%5) since these lines are in mm, there's very little (if any) absorption in the lens, so the flux doesn't decrease due to absorption
-%\end{framed}
-
- In this letter, we explore the possibility of detecting the central lensed images in such deep observations and investigate the constraints that could be placed on the core size, mass of SMBHs, and the slope of the density profiles from detection, or non-detection of such images. In Section 2 we describe the simulations, in Section 3 we present the results and discuss them, and finally conclude in Section 4. We use a flat $\Lambda$CDM cosmology with $h=0.71$ and $\Omega_M=0.267$.
+ In this letter, we explore the possibility of detecting the central lensed images in such deep observations and investigate the constraints that could be placed on the core size, mass of SMBHs, and the slope of the density profiles from detection, or non-detection of such images. We also examine if binary SMBHs can possibly be detected in such observations. 
+ In Section 2 we describe the simulations, in Section 3 we present the results and discuss them, and finally conclude in Section 4. We use a flat $\Lambda$CDM cosmology with $h=0.71$ and $\Omega_M=0.267$.
  
 % the distribution of matter in the innermost regions of galaxies from detection or non-detection of such central images.\\ \\
 %3) the paper is organized as: section 2 describes the simulations, section 3 presents the results and discuss them and conclude in section 5 \\ \\
@@ -185,14 +175,16 @@ For simulations where we calculate the detection significance of the demagnified
 %\newpage
 \section{Results and Discussions}
 \subsection{Detection of central images with ALMA}
-In this section, we estimate the detection significance of central images of molecular lines with ALMA. As discussed earlier, the flux of the central images strongly depend on the slope of the lensing potential, the core size, and the mass of the central SMBHs.  
-Figure \ref{fig:3} shows the detection significant of the central image for a range of these parameters in a 10-h long ALMA observation. The grey curves (dark to light) correspond to profiles with slope of $\gamma=0.9, 1.0, 1.1,$ and 1.2.  As seen in this figure, larger stellar cores result in brighter images. Lensing studies have shown that the total profiles of galaxies are very close to vein isothermal. In case of an isothermal profile, and with a core size larger than XX pc and a $10^8M_{\odot}$ black hole, such observations should be able to detect the central image with more than $XX\sigma$. We note that for significantly shallower ($\gamma<0.8$) and cored density profiles, the central image is \emph{magnified} and its detection should be trivial. 
-SMBHs can also have a significant influence on the magnification and flux of the central images. More massive SMBHs demagnify the images on scales comparable to their Einstein radius size. 
-The dashed curves in Figure \ref{fig:3} show the suppression of image flux due to existence of a $2\times10^8M_{\odot}$ SMBH.
+%In this section, we estimate the detection significance of central lensed images of molecular lines with ALMA. 
+As discussed earlier, the fluxes of central images strongly depend on the slope of the lensing potential, the core size, and the mass of the central SMBHs.  Figure \ref{fig:3} shows the detection significant of a central image for a range of these parameters in a 10-h long ALMA observation. The grey curves (dark to light) correspond to profiles with slopes of $\gamma=0.9, 1.0, 1.1,$ and 1.2.  As seen in this figure, larger stellar cores result in brighter images. %Lensing studies have shown that the total profiles of galaxies are very close to isothermal \red{cite{}}. 
+When $\gamma=1.0$ and with a core size larger than 150 pc, such observations should be able to detect the central images with more than $5\sigma$ significance. For significantly shallower ($\gamma<0.8$) profile slopes with larger cores, the central image is \emph{magnified} and its detection should be trivial.  The magnification and flux of central images is also influenced by SMBHs.
+SMBHs demagnify the images on scales comparable to the size of their Einstein radii.
+The dashed curves in Figure \ref{fig:3} show the suppression of the fluxes of central images in presence of a $2\times10^8M_{\odot}$ SMBH.
 
-As seen in Figure \ref{fig:3}, and as pointed out by \citet{Keeton:03}, realistic parameters produce a wide range of predictions for the flux of the central images. Although for some plausible parameter combinations (e.g., $\gamma_{s}=1.2,$ $M_{BH} = 2e8$,$R_{core}<300 pc$ ) there is little chance of detecting the central images, over a non-negligable fraction of plausible parameter space the central images could be detected. 
+As seen in Figure \ref{fig:3}, and as pointed out by \citet{Keeton:03}, plausible parameters (e.g. core sizes) predict  a wide range of magnifications for   central images. Although for some plausible parameter combinations (e.g., $\gamma_{s}=1.2,$ $M_{BH} = 2e8$,$R_{core}<300 pc$ ) there is little chance of detecting the central images, over a non-negligable fraction of parameter space the central images may be detectable. 
 
-\begin{framed}
+We also find that the detection significance of the central images can increase by about $3\sigma$ for an extended source with a radius of 1 kpc compared to a point source. Since extended sources cover a larger area of the source plane, which may include regions with higher magnifications, the resulting flux can be larger than the flux of more compact sources.
+%\begin{framed}
 %1) We evaluate the detection significance of central images over a range of relevant parameters. \\ \\
 %2) Figure 4 shows our results for a 10-hr long observation with ALMA\\ \\
 %3) we show that, as expected, the image is fainter for steeper profile slopes. \\ \\
@@ -202,53 +194,36 @@ As seen in Figure \ref{fig:3}, and as pointed out by \citet{Keeton:03}, realisti
 %6) the flux is significantly supressed by the central SMBH \\  \\
 %7) the dashed curves show the same for a galaxy with a $2e8M_{\odot}$ SMBH. \\ \\
 %8) we note that, as pointed out in Keeton 2003, there's a large range of possibilities for plausible lens parameters: although for some parameter combinations (e.g., $\gamma_{s}=1.2,$ $M_{BH} = 2e8$,$R_{core}<300 pc$ ) there is no chance of detecting the central image, over a significant fraction of allowed parameters the central image could be detected. \\ \\
-9) to calculate this plot we have used a configuration XX, because: it allows us to resolve the central image (if existent), while it is more sensitive that more extended configurations.  In addition, this is the configuration that will be likely used for other projects/sciences.
-\end{framed}
+%9) to calculate this plot we have used a configuration XX, because: it allows us to resolve the central image (if existent), while it is more sensitive that more extended configurations.  In addition, this is the configuration that will be likely used for other projects/sciences.
+%\end{framed}
 
 \begin{figure}
 \begin{center}
 \centering
-\includegraphics[trim= 0 0 0 0, width=0.45\textwidth]{figures/f_03.eps}
+\includegraphics[trim= 0 0 0 0, clip,width=0.48\textwidth]{figures/f_03.eps}
 \centering
 \end{center}
-\caption{ Significance of detection of the central image as a function of the stellar core size for a 10-hr long ALMA observation. The colors correspond to different slopes of the stellar component. The solid curves correspond to a case without a SMBH while the dashed line show the result of a simulation which includes a $2\times10^8M_{\odot}$ SMBH at its center.
+\caption{ Detection significance of a central image as a function of the stellar core size for a 10-hr long ALMA observation. The gray shades correspond to different slopes for the stellar component. The solid curves correspond to a case without a SMBH while the dashed curves show the results when a $2\times10^8M_{\odot}$ SMBH is placed at the center of the lens.
+The source has a Gaussian light profile with an rms of 600 pc. The red curves show the same predictions when $\gamma=1$, for a source with rms of 300 pc.
 \label{fig:3}}
 \end{figure}
 
 \subsection{SMBHs and the core size}
-Here, we study how deep observations of molecular lines can constrain the slope of the density profile, the size of the stellar core, and the mass of the SMBHs. We study a few cases in which the central images are detected as well as few scenarios in which they are below the $<3\sigma$ detection limit. We use a Fisher analysis to investigate the degeneracies among parameters and the constraints that could be placed on them.
-We include all our model parameters in the Fisher matrix, and marginalize over the nuisance parameters (e.g. intrinsic source flux and position), to obtain the marginalized likelihood of the relevant parameters.  
- Figure \ref{fig:4} shows the parameters for a case with $R_{core}$=180 pc, $M_{BH}=1e8$ and $\gamma=1$. As seen in Figure \ref{fig:3},  this parameter combination results in a faint ($\sim3\sigma$) detection of the central image. 
- 
-\begin{framed}
-%1) in this section we study how well we can constrain the mass of the central black hole, the slope of the density and the size of the stellar core. \\ \\
-%2) we choose a few models where the central image is detected OR not detected and use a Fisher analysis to determine the degeneracies between the parameters and the detection significance of each parameter.  \\ \\
-%3) we note that in the Fisher analysis we include all nuisance parameters (e.g. source position, size, etc.) and marginalize over them  \\ \\
-%4) Figure 4 shows the parameters for a case with $R_{core}$=180 pc, $M_{BH}=1e8$ and $\gamma=1$. As seen from Figure 3,  this parameter combination results in a faint ($\sim3\sigma$) detection of the central image. \\ \\
-5) we note that the black hole mass is degenerate with the core size: a larger core, results in a brighter image, which can be supressed by a more massive BH. \\ \\
-6) The Fisher data show that the black hole mass cannot be measured with high significance in such observations ($1.16\sigma$) \\ \\
-7) however, interestingly, the degeneracy of the black hole mass and the size of the central core breaks at the high end. and the stellar core is measured with XX $\sigma$\\ \\
-8) this is likely because a very large core results in a fairly extended central images, which could be \emph{resolved} (see Figure 1), in that case, the flux suppression by a crazy massive black hole will result in a distinct dip in the central image  which can be used to distinguish the two. Rusin  Keeton Winn 2005 %http://adsabs.harvard.edu/abs/2005ApJ...627L..93R
-\\ \\
-
-9) we note that the constraints in this case will be of similar strength to those of Winn 2004. \\ \\ 
-10) in the case of very small core, and a massive black hole (no detection of the image) we only get an upper limits of $\sim$ and $\sim$ for the two. \\ \\
-11) and in case with massive core and massive black hole we measure both with high significance. 
-12) we note that all these parameter combinations are plausible choices, and therefore long observations such as these will be able to either measure these parameters with confidence or place strong constraints on them.
-
-
-\end{framed}
+We studied the constraints that deep observations of molecular lines can place on the slope of the density profile, the size of the stellar core, and the mass of the SMBHs. 
+We performed a Fisher analysis to examine the constrains and parameter degeneracies in simulations in which the central images are detected, as well as those in which they are below the detection limit. All model parameters were included in the Fisher matrix, and nuisance parameters were later marginalize over (e.g. intrinsic source flux and position) to obtain the marginalized likelihood of the relevant parameters.  
+ Figure \ref{fig:4} shows the parameter covariance for two examples with different core radii (top panel:  $R_{core}$=170 pc, bottom panel: $R_{core}$=450 pc).
+% . As seen in Figure \ref{fig:3},  this parameter combination results in a $\sim3\sigma$ detection of the central image. 
+We found that when $\gamma=1$, cores sizes larger than 100 pc can be measured with high significance. As seen in top panel of Figure \ref{fig:4}, 
+the mass of SMBH is degenerate with the core size: larger cores result in brighter images, whose flux can be supressed by a more massive SMBH.
+This degeneracy,  however,  breaks when the core size is very large. 
+Large cores produce more extended central images that are spatially resolved. The distortion caused by a SMBH can distort this image on smaller scales, resulting in a distinct dip in its surface brightness. %, which breaks the degeneracy of the SMBH with the core size (for point sources this will be observed as the plotting of the central image by the SMBH). %Rusin  Keeton Winn 2005
+We found that for cores $\gtrsim200$ pc, SMBH masses could be measured with high significance (e.g., bottom panel of Figure \ref{fig:4}), but for smaller core sizes, only upper limits on the mass of SMBHs can be placed.
+We also find that when the core size is larger, the constraints on the density profile slope are stronger.
 
 %\begin{framed}
+%9) we note that the constraints in this case will be of similar strength to those of Winn 2004. \\ \\ 
+%12) we note that all these parameter combinations are plausible choices, and therefore long observations such as these will be able to either measure these parameters with confidence or place strong constraints on them.
 %\end{framed}
-
-%\begin{framed}
-%\end{framed}
-
-
-
-
-%\newpage
 
 
 
@@ -261,7 +236,8 @@ We include all our model parameters in the Fisher matrix, and marginalize over t
 \begin{figure}
 \begin{center}
 \centering
-\includegraphics[trim= 0 0 0 0, width=0.45\textwidth]{figures/f_04.eps}
+\includegraphics[trim= 0 0 0 0, width=0.45\textwidth]{figures/f_04_A.eps}
+\includegraphics[trim= 0 0 0 0, width=0.45\textwidth]{figures/f_04_B.eps}
 \centering
 \end{center}
 \caption{ Covariance matrix of parameters for a few different scenarios.
@@ -269,15 +245,39 @@ We include all our model parameters in the Fisher matrix, and marginalize over t
 \end{figure}
 
 
+\subsection{Detection of Binary SMBHs}
+We also investigated the possibility of detecting binary SMBHs using the perturbations that they induce on the lensed central images. 
+We randomly placed two SMBHs in a circle with a radius of 1 kpc from the center of the galaxy and, using the Fisher analysis, computed the detection significance of their masses .
+
+We found that in most cases, it is not possible to measure the mass of both SMBHs due to the degeneracies between their masses and their positions.
+However, in a few simulation, we encountered configurations that allowed a detection of both SMBH masses. The constraints in such observations come from the distortion in the resolved \emph{shape} of the central image.
+
+%found cases with a shallow potential and a large stellar core, which result in bright central images, we found certain configurations in which the resolved shape of the central image can allow a detection of the masses of both SMBHs. 
+
+To estimate the probability of such events we simulated 200 realizations of the positions of the SMBHs for high resolution (50 mas) 40-h long observations. We used various core sizes to examine the effect of central image magnification on the binary SMBHs mass measurements.
+
+%for a case with $\gamma_s=0.8$ and $R_{core}=150$ pc,
+
+We found that in XX\% of the simulations both SMBHs were detected. 
+  Although this number may seems promising, the prospects of such measurements will be limited by the number of discovered bright central images, which based on their current dearth, may be very few.
+  For larger core sizes and shallower profiles, which result in yet larger and brighter central images, the sensitivity to SMBHs \emph{decreases} again, due to the size of the image becoming larger than the Einstein radius of the SMBHs (analogous to the decrease in sensitivity to subhalos due to large source sizes). If such large cores are ever detected, spectral decomposition may allow increasing the sensitivity to the effects of the SMBHs \citep{hezaveh:13a}.
+
+Since suitability for such measurements will depend on the core size and slope of the stellar light, future high resolution observations with thirty meter telescopes, may help select systems with the right range of morphological parameters, to be followed up.
+
+Note that since the background source is extended, the flux subpression is \emph{less}
+
+
 
 \section{Conclusion}
-We examined the possibility of detecting central, demagnified images of strongly lensed molecular lines with ALMA. We find that there is a non-negligible space of realistic and plausible parameters that result in a high significance detection of the central images. We showed that such deep observations can either allow a measurement of the mass of the central SMBH and the stellar core size, or place strong limits on them (if not detected).    
+We examined the prospects of detecting central, demagnified images of strongly lensed molecular lines with ALMA. We found that there is a non-negligible space of realistic and plausible parameters that result in a high significance detection of the central images. We showed that such deep observations can either allow a measurement of the mass of the central SMBH and the stellar core size, or place strong limits on them.
+We also studied the possibility of detecting binary SMBHs and found that under special conditions there is a non-zero probability of measuring the masses of both SMBHs, although suitable central images for such measurements may be very rare.
 
 \acknowledgements{
-}
+Acknowledge NSF?}
 
 \bibliographystyle{apj}
 \bibliography{references}
 
+%\input{ms.bbl}
 
 \end{document}
