@@ -128,21 +128,20 @@ In contrast to lensed quasars, these sources are extended over hundreds of parse
 
 
 \section{Simulations}
-We generate lensed images of background sources, predict ALMA visibilities, and use them to estimate the detection significance of central images for various parameters. We simulate observations of a high-$J$ CO line. The line is assumed to have a velocity integrated flux of 1 Jy km/s and a FWHM of 400 km/s, resulting in an average flux of 2.5 mJy over a XX km/s band. 
+We generated lensed images of background sources, predicted ALMA visibilities, and used them to estimate the detection significance of central images for various parameters. We simulated observations of a high-$J$ CO line. The line is assumed to have a velocity integrated flux of 1 Jy km/s and a FWHM of 400 km/s, resulting in an average flux of 2.5 mJy over a 400 km/s band. 
 
-We model the lens potential as a sum of three components: dark matter, stellar population and central SMBH. The dark matter is modeled as a singular power-law with a slope of 0.1, in agreement with the projected surface mass density of the NFW profile \citep{Golse:02}. As by pointed out by \citep{Keeton:03}, due to its extreme flatness in these regimes, the dark matter component has negligible influence on the central images. 
-The stellar population is modeled as a a core power-law, $\Sigma\propto (r^2+s^2)^{\gamma}$. Figure \ref{fig2} shows the stellar component (red curve), dark matter component (black dashed curve) and the sum of the two (black solid curved). The grey dashed curves show a few example of core-sersic models with parameters taken from \citet{Ferrarese:06}. We note that although the cored power-law model used in this work does not account for the slope of the stellar distribution below the core break, it is a close fit and a reasonable model to approximate the observed stellar light profiles. 
-The black hole is modeled as a simple point mass at the center of the potential. In this work we assume that all the three components are concentric.
-
-The lens mass is set to XX $M_{\odot}$ resulting in an Einstein radius of $\sim XX''$, in agreement with galaxy-galaxy strong lenses. We divide this mass equally (in a radius of 10 kpc) between stellar and dark matter. 
-
-To predict the visibilities we calculate the ALMA $uv$-coverage for a 5-$hr$ long observation with the most extended antenna configuration (full array), using the $simobserve$ task of Common Astronomy Software Applications package, which results in an angular resolution of $\sim20\, \, milli$-$arcsec$ at an observing frequency of 240 GHz. 
-The visibilities for each channel are calculated by computing the 2D Fourier transform of the corresponding layer of the data cube and resampling the Fourier transform maps over the uv-coverage. 
-The noise is estimated using ALMA sensitivity calculator for a channel width of 8 km/s at 240 GHz. 
-We use finite differencing of visibilities to calculate the Fisher information and the parameter covariance matrix to calculate the significance of black hole mass measurement.
+We modeled the lens potential as a sum of three components: dark matter, stellar population and central SMBH. The dark matter was modeled as a singular power-law with a slope of 0.1, in agreement with the projected surface mass density of the NFW profile \citep{Golse:02}. As by pointed out by \citep{Keeton:03}, due to its extreme flatness in these regimes, the dark matter component has negligible influence on the central images. 
+The stellar population is modeled as a a core power-law, $\Sigma\propto (r^2+R_{\mathrm{core}}^2)^{\gamma}$. Figure \ref{fig2} shows the stellar component (red curve), dark matter component (black dashed curve) and the sum of the two (black solid curved). The grey dashed curves show a few example of core-sersic models with parameters taken from \citet{Ferrarese:06}. Although the cored power-law model used in this work does not account for the slope of the stellar distribution below the core break, it is a close fit and a reasonable model to approximate the observed stellar light profiles. 
+The black hole was modeled as a simple point mass at the center of the potential. We assumed that all the three components are concentric.
+The stellar and dark mass of the lens were normalized such that they each add up to $1.5\times10^11 M_{\odot}$ in a radius of 10 kpc. The resulting Einstein radius if of order 1 arcsec, in agreement with galaxy-galaxy strong lenses \citep[e.g.,][]{}.
+%lens mass was set to XX $M_{\odot}$ resulting in an Einstein radius of $\sim XX''$, in agreement with galaxy-galaxy strong lenses. We divide this mass equally (in a radius of 10 kpc) between stellar and dark matter. 
+To predict the visibilities we calculated the ALMA $uv$-coverage for a 5-$hr$ long observation (full array), using the $simobserve$ task of Common Astronomy Software Applications package, for an observing frequency of 150 GHz. 
+The visibilities for each channel were calculated by computing the 2D Fourier transform of the surface brightness data maps and resampling the Fourier transform maps over the uv-coverage. 
+The noise was estimated using ALMA sensitivity calculator for a channel width of 400 km/s at 150 GHz. 
 
 
-For simulations where we calculate the detection significance of the demagnified image, we compute the magnification at every pixel in the image plane and generate maps with and without the the demagnified flux and evaluate the detection significance of the central image by comparing the two images. In other simulations where the constrains on parameters are needed, we use a Fisher analysis to compute the full covariance of all parameters. We then marginalize over the nuisance parameters (e.g. source position, lens ellipticity) to calculate the marginalized likelihood of the relevant parameters. 
+For simulations where we calculated the detection significance of the demagnified image, we computed the magnification at every pixel in the image plane and generated maps with and without the the demagnified flux and evaluated the detection significance of the central image by comparing the two images. In other simulations where the constrains on parameters are needed, we used a Fisher analysis to compute the full covariance of all parameters. 
+We used finite differencing of visibilities to calculate the gradients, and marginalize over the nuisance parameters (e.g. source position, lens ellipticity) to calculate the marginalized likelihood of the relevant parameters. 
 
 \begin{figure}
 \begin{center}
@@ -246,31 +245,33 @@ We also find that when the core size is larger, the constraints on the density p
 
 
 \subsection{Detection of Binary SMBHs}
-We also investigated the possibility of detecting binary SMBHs using the perturbations that they induce on the lensed central images. 
-We randomly placed two SMBHs in a circle with a radius of 1 kpc from the center of the galaxy and, using the Fisher analysis, computed the detection significance of their masses .
+We also investigated the possibility of detecting binary SMBHs using the perturbations that they induce on lensed central images. 
+We randomly placed two SMBHs with masses of $4\times10^8 M_{\odot}$ each in a circle of radius of 1 kpc from the center of the galaxy and, using the Fisher analysis, computed the detection significance of their masses. We found that in most cases, it is not possible to measure the mass of both SMBHs, either because they are not near the central images or due to the degeneracy between their masses, their positions, and the core radius, or because the distortions in the central images are unresolved.
+However, when the central images are fairly extended (due to a shallow density slope and a large core size), a larger fraction of the inner 1 kpc region is covered by the central image, increasing the probability of lensing by SMBHs. Such images also have larger fluxes, increasing the snr of the observations and they also allow for the detection of fairly separated SMBHs. In this case the SMBHs can affect different parts of the central image, reducing the degeneracy between their masses.
+Under such conditions, we found some configurations that allowed a detection of both SMBH masses. The constraints on SMBH masses in such observations arise from the distortions in the resolved \emph{shape} of the central images. Figure \ref{fig:5} shows an example of such configuration when $\gamma = 0.9$ and $R_{\mathrm{core}}=300$ pc. Left panel shows the central image without the effects of SMBHs and the right panel shows its morphology in presence of two SMBHs. 
 
-We found that in most cases, it is not possible to measure the mass of both SMBHs due to the degeneracies between their masses and their positions.
-However, in a few simulation, we encountered configurations that allowed a detection of both SMBH masses. The constraints in such observations come from the distortion in the resolved \emph{shape} of the central image.
+%Such distortions, however, can only be marginally resolved with ALMA, and very long integrations may be required 
+
+%The positions of the SMBHs are marked with red crosses. 
 
 %found cases with a shallow potential and a large stellar core, which result in bright central images, we found certain configurations in which the resolved shape of the central image can allow a detection of the masses of both SMBHs. 
 
-To estimate the probability of such events we simulated 200 realizations of the positions of the SMBHs for high resolution (50 mas) 40-h long observations. We used various core sizes to examine the effect of central image magnification on the binary SMBHs mass measurements.
-
-%for a case with $\gamma_s=0.8$ and $R_{core}=150$ pc,
-
-We found that in XX\% of the simulations both SMBHs were detected. 
+To estimate the probability of configurations which allow detection of binary SMBHs, we simulated many realizations of the positions of the SMBHs for a high resolution (50 mas) 50-h long observation. 
+We found that $\lesssim5\%$ of the simulations, in which the core size was larger than 200 pc, both SMBHs were detected. 
   Although this number may seems promising, the prospects of such measurements will be limited by the number of discovered bright central images, which based on their current dearth, may be very few.
-  For larger core sizes and shallower profiles, which result in yet larger and brighter central images, the sensitivity to SMBHs \emph{decreases} again, due to the size of the image becoming larger than the Einstein radius of the SMBHs (analogous to the decrease in sensitivity to subhalos due to large source sizes). If such large cores are ever detected, spectral decomposition may allow increasing the sensitivity to the effects of the SMBHs \citep{hezaveh:13a}.
+We conclude that only under very rare conditions, and with very long observations ($>40$ hours), central image may allow us to probe binary SMBHs. The prospects of such measurement will ultimately depend on discoveries of much larger samples of lenses \citep{}. 
 
-Since suitability for such measurements will depend on the core size and slope of the stellar light, future high resolution observations with thirty meter telescopes, may help select systems with the right range of morphological parameters, to be followed up.
+%Since the suitability for such measurements will depend on the core size and slope of the stellar light, future high resolution observations with thirty meter telescopes, may help select systems with the right range of morphological parameters, to be followed up.
 
-Note that since the background source is extended, the flux subpression is \emph{less}
+
 
 
 
 \section{Conclusion}
 We examined the prospects of detecting central, demagnified images of strongly lensed molecular lines with ALMA. We found that there is a non-negligible space of realistic and plausible parameters that result in a high significance detection of the central images. We showed that such deep observations can either allow a measurement of the mass of the central SMBH and the stellar core size, or place strong limits on them.
-We also studied the possibility of detecting binary SMBHs and found that under special conditions there is a non-zero probability of measuring the masses of both SMBHs, although suitable central images for such measurements may be very rare.
+We also studied the possibility of detecting binary SMBHs and found that only under very rare conditions central images may allow detection of both SMBHs. 
+
+
 
 \acknowledgements{
 Acknowledge NSF?}
