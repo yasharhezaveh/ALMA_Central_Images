@@ -50,7 +50,7 @@ In addition, the distribution of stellar populations in central regions of galax
 %Stellar light profiles:
 %\\ \\
 Studies of local galaxies in optical wavelengths have shown that, unlike their lower-mass counterparts, the most massive elliptical galaxies often exhibit cored stellar light profiles, with core sizes ranging from 50 to 500 pc \citep[e.g.,][]{Ferrarese:06}. 
-These galaxies are thought to form through gas-poor mergers. In such mergers, the central structure of the resulting galaxy is dominated by the inner structure of the more concentrated progenitor.  Since high-mass ellipticals are thought to form from mergers of their lower-mass counterparts, with steep profiles, the existence of cores in these galaxies represents a challenge to our understanding of galaxy mergers. Cores in massive ellipticals, therefore, may be the result of a different (not merger) process.  
+These galaxies are thought to form through gas-poor mergers. In such mergers, the central structure of the resulting galaxy is dominated by the inner structure of the more concentrated progenitor.  Since high-mass ellipticals are thought to form from mergers of their lower-mass counterparts, with steep profiles, the existence of cores in these galaxies represents a challenge to our understanding of galaxy merger. Cores in massive ellipticals, therefore, may be the result of a different (not merger) process.  
 ``Black hole scouring'' is a plausible mechanism that can explain core-formation in these galaxies \citep{Thomas:14}.
 %\end{framed}
 
@@ -98,8 +98,8 @@ of central images in group and cluster lenses are not uncommon \citep[e.g.,][]{I
 A new large population of strong lenses has recently been discovered in mm-bands. These systems were initially detected as bright point sources in wide area mm/submm surveys \citep{vieira:10,negrello:10}. Follow-up observations have confirmed that they constitute a large population of strong lenses \citep{vieira:13, hezaveh:13b, bussmann:13}.
 In particular, ALMA observations of these sources have revealed that the background galaxies are dusty, starburst, high redshift galaxies, containing a wealth of cold molecular gas \citep{Weiss:13}.  These observations showed that the extreme brightness of the sources, in combination with the high sensitivity of ALMA, result in very high signal to noise observations \citep[e.g., the lens models in][were based on just $\sim50$ second long observations]{hezaveh:13b}.
 Motivated by the discovery of this population and the operation of ALMA, here we revisit the issue of detecting central images.
-Deep ALMA observations of molecular line emission in these sources are likely to be carried out for various reasons \citep[e.g.,][]{hezaveh:14a,hezaveh:14b}. If a central image of a lensed molecular line is detected, it will be readily identifiable since it will correspond to the redshift of the source, leaving no doubt about its origin. In addition, since these lines are in mm-wave, the line fluxes are very unlikely to be suppressed by absorption in the lens. 
-In contrast to lensed quasars, these sources are extended over hundreds of parsecs and can cover a larger area of the source plane. This can allow them to occupy the less demagnified regions of the source plane, allowing a higher flux for the central image \citep[similar to magnification damping of highly magnified images due to finite source effects, see e.g.,][]{hezaveh:11}.
+Deep ALMA observations of molecular line emission in these sources are likely to be carried out for various reasons \citep[e.g.,][]{hezaveh:14a,hezaveh:14b}. If a central image of a lensed molecular line is detected in such observations, it will be readily identifiable, since it will correspond to the redshift of the source, leaving no doubt about its origin. In addition, since these lines are in mm-wave, the line fluxes are very unlikely to be suppressed by absorption in the lens. 
+In contrast to lensed quasars, these sources are extended over hundreds of parsecs and can cover a larger area of the source plane. This can allow them to overlap with the less demagnified regions of the source plane, further increasing the flux of the central images \citep[analogous to magnification damping of highly magnified images due to finite source effects, see e.g.,][]{hezaveh:11}.
 
  In this letter, we explore the possibility of detecting central lensed images in such deep observations and investigate the constraints that could be placed on the core size, mass of SMBHs, and the slope of the density profiles from detection, or non-detection of such images. We also examine if 
  such observations can possibly detect binary SMBHs, using the distortions they may cause in the central images. 
@@ -129,7 +129,7 @@ In contrast to lensed quasars, these sources are extended over hundreds of parse
 
 
 \section{Simulations}
-We generated lensed images of background sources, predicted ALMA visibilities, and used them to estimate the detection significance of central images for various parameters. We simulated observations of a high-$J$ CO line. The line is assumed to have a velocity integrated flux of 1 Jy km/s and a FWHM of 400 km/s, resulting in an average flux of 2.5 mJy over a 400 km/s band \citep{Bothwell:12}. 
+We generated lensed images of background sources, predicted ALMA visibilities, and used them to estimate the detection significance of central images for various parameters. We simulated observations of a high-$J$ CO line. The line is assumed to have a velocity integrated flux of 1 Jy km/s and a FWHM of 400 km/s, resulting in an average flux of 2.5 mJy over a 400 km/s band, a typical value for high redshift dusty galaxies \citep{Bothwell:12}. 
 
 We modeled the lens potential as a sum of three components: dark matter, stellar population and a central SMBH. The dark matter component was modeled as a singular power-law with a slope of 0.1, in agreement with the projected surface mass density of the NFW profile in the innermost regions \citep{Golse:02}. As  pointed out by \citet{Keeton:03}, due to its extreme flatness in these regimes, the dark matter component has negligible influence on the central images. 
 The stellar population is modeled as a a cored power-law, $\Sigma(r)\propto (r^2+R_{\mathrm{core}}^2)^{\gamma}$. Figure \ref{fig2} shows the stellar component (red curve), dark matter component (black dashed curve) and the sum of the two (black solid curve). The grey dashed curves show a few examples of core-sersic models with parameters taken from \citet{Ferrarese:06}. Although the cored power-law model used in this work does not account for the slope of the stellar distribution below the core break, it is a close fit and a reasonable model to approximate the observed stellar light profiles in the inner few kpc. 
@@ -141,13 +141,13 @@ The model visibilities were calculated by computing the 2D Fourier transform of 
 The noise was estimated using ALMA sensitivity calculator for a channel width of 400 km/s at 150 GHz. 
 
 
-For simulations where we calculated the detection significance of the demagnified image, we computed the magnification at every pixel in the image plane and generated maps with and without the the demagnified flux and evaluated the detection significance of the central image by comparing the two images. In other simulations where the constrains on parameters are needed, we used a Fisher analysis to compute the full covariance of all parameters. 
+For simulations where we calculated the detection significance of the demagnified image, we computed the magnification at every pixel in the image plane and generated maps with and without the the demagnified flux and evaluated the detection significance of the central image by comparing the two images. In other simulations, where the constrains on parameters are needed, we used a Fisher analysis to compute the full covariance of all parameters. 
 We used finite differencing of visibilities to calculate the gradients, and marginalize over the nuisance parameters (e.g. source position, lens ellipticity) to calculate the marginalized likelihood of the relevant parameters. 
 
 \begin{figure}
 \begin{center}
 \centering
-\includegraphics[trim= 0 0 5 6, clip, width=0.45\textwidth]{figures/f_01.eps}
+\includegraphics[trim= 0 0 5 6, clip, width=0.5\textwidth]{figures/f_01.eps}
 \centering
 \end{center}
 \caption{ Model density profiles. The black dashed line shows the dark matter component, with a slope of 0.1, consistent with a projected NFW at the innermost regions. the grey dashed curves show cored-sersic five fits to stellar light profiles of massive galaxies from Ferrarese 2006. The red solid curve shows our cored-power-law model that we use to approximate this stellar component. The solid black line shows the total matter density (dark plus stellar) of our model. 
@@ -172,20 +172,42 @@ We used finite differencing of visibilities to calculate the gradients, and marg
 
 %\end{framed}
 
-%\newpage
+\newpage
+
+\begin{figure}
+\begin{center}
+\centering
+\includegraphics[trim= 0 0 0 0, clip,width=0.48\textwidth]{figures/f_03.eps}
+\centering
+\end{center}
+\caption{ Detection significance of a central image, as a function of the stellar core size for a 10-hr long ALMA observation. 
+The fiducial model (solid black curve) corresponds to $\gamma_{stellar}=1.0$, $M_{\mathrm{BH}}=2\times10^8 M_{\odot}$, and a source size of 500 pc (radius). The dashed black curve shows the detection significance when the SMBH is removed and the solid red curve shows the effect of a steeper density profile ($\gamma_{\mathrm{stellar}}=1.1$). The solid blue and gray dotted curves show the detections for a source with a radius of 1 kpc and 250 pc respectively. 
+%The gray shades correspond to different slopes for the stellar component. The solid curves correspond to a case without a SMBH while the dashed curves show the results when a $2\times10^8M_{\odot}$ SMBH is placed at the center of the lens.
+%The source has a Gaussian light profile with an rms of 600 pc. The red curves show the same predictions when $\gamma=1$, for a source with rms of 300 pc.
+\label{fig:3}}
+\end{figure}
+
 \section{Results and Discussions}
 \subsection{Detection of central images with ALMA}
 %In this section, we estimate the detection significance of central lensed images of molecular lines with ALMA. 
-The fluxes of central images strongly depend on the slope of the lensing potential, the core size, and the mass of the central SMBHs.  Figure \ref{fig:3} shows the detection significance of a central image for a range of these parameters in a 10-h long ALMA observation. The grey curves (dark to light) correspond to profiles with slopes of $\gamma=0.9, 1.0, 1.1,$ and 1.2.  
-The source has a Gaussian profile with an rms of 600 pc and the lensed images have a fold configuration. 
+The fluxes of central images strongly depend on the slope of the lensing potential, the core size, and the mass of the central SMBHs.  Figure \ref{fig:3} shows the detection significance of a central image for a range of these parameters in a 10-h long ALMA observation. 
+The figure shows the detection significance of the demagnified central flux, as a function of the stellar core size.
+The fiducial model (black curve) has a stellar profile slope of $\gamma_s=1.0$, and a $2\times10^8M_{\odot}$ SMBH, with a background source 
+with a Gaussian profile with an rms of 500 pc.  The red curve shows the effect of a steeper density slope, suppressing the flux of the central image. 
+
+
+
+
 As seen in this figure, larger stellar cores result in brighter images. %Lensing studies have shown that the total profiles of galaxies are very close to isothermal \red{cite{}}. 
-When $\gamma=1.0$ and with a core size larger than 150 pc, such observations should be able to detect the central images with more than $5\sigma$ significance. For significantly shallower ($\gamma<0.8$) profiles and larger cores, the central image is \emph{magnified} and its detection should be trivial.  The magnification and flux of central images is also influenced by SMBHs.
+In the absence of a massive black hole, when $\gamma=1.0$ and with a core size larger than 150 pc, such observations should be able to detect the central images with more than $5\sigma$ significance. For significantly shallower ($\gamma<0.8$) profiles and larger cores, the central image is \emph{magnified} and its detection should be trivial.  The magnification and flux of central images is also influenced by SMBHs.
 SMBHs demagnify the images on scales comparable to the size of their Einstein radii ($\sim30$ mas for a $2\times10^8M_{\odot}$ SMBH).
 The dashed curves in Figure \ref{fig:3} show the suppression of the fluxes of central images in presence of a $2\times10^8M_{\odot}$ SMBH.
 
-As seen in Figure \ref{fig:3}, and as pointed out by \citet{Keeton:03}, plausible parameters predict  a wide range of magnifications for   central images. Although for some plausible parameter combinations (e.g., $\gamma_{s}=1.2,$ $M_{BH} = 2\times10^8 M_{\odot}$,$R_{core}<300 pc$ ) there is little chance of detecting the central images, over a non-negligable fraction of parameter space the central images may be detectable. 
+As seen in Figure \ref{fig:3}, and as pointed out by \citet{Keeton:03}, plausible parameters predict  a wide range of magnifications for   central images. Although for some parameter combinations (e.g., $\gamma_{s}=1.1,$ $M_{BH} = 2\times10^8 M_{\odot}$,$R_{core}<200 pc$ ) there is little chance of detecting the central images, over a non-negligable fraction of parameter space the central images may be detectable. 
 
-We also find that the detection significance of the central images can significantly increase for an extended source with a radius of 1 kpc compared to a point source. Since extended sources occupy a larger area of the source plane, which may cover regions with higher magnifications, the resulting flux can be larger than the flux of more compact sources. The red curves in Figure \ref{fig:3} show the drop in the flux of the image for a smaller (300 pc) source. 
+We also find that the detection significance of the central images can significantly increase for an extended source with a radius of 1 kpc compared to a point source. Since extended sources occupy a larger area of the source plane, which may cover regions with higher magnifications, the resulting flux can be larger than the flux of more compact sources. The solid blue curve in Figure \ref{fig:3} shows increase in the flux of the demagnified image for a larger source (with a radius of 1 kpc). In contrast, the flux of a source with a radius of 250 pc is severely supressed, largely by the central SMBH (dotted grey curve). As such, it is important to consider that various 
+
+
 %\begin{framed}
 %1) We evaluate the detection significance of central images over a range of relevant parameters. \\ \\
 %2) Figure 4 shows our results for a 10-hr long observation with ALMA\\ \\
@@ -199,27 +221,16 @@ We also find that the detection significance of the central images can significa
 %9) to calculate this plot we have used a configuration XX, because: it allows us to resolve the central image (if existent), while it is more sensitive that more extended configurations.  In addition, this is the configuration that will be likely used for other projects/sciences.
 %\end{framed}
 
-\begin{figure}
-\begin{center}
-\centering
-\includegraphics[trim= 0 0 0 0, clip,width=0.48\textwidth]{figures/f_03.eps}
-\centering
-\end{center}
-\caption{ Detection significance of a central image as a function of the stellar core size for a 10-hr long ALMA observation. The gray shades correspond to different slopes for the stellar component. The solid curves correspond to a case without a SMBH while the dashed curves show the results when a $2\times10^8M_{\odot}$ SMBH is placed at the center of the lens.
-The source has a Gaussian light profile with an rms of 600 pc. The red curves show the same predictions when $\gamma=1$, for a source with rms of 300 pc.
-\label{fig:3}}
-\end{figure}
 
 \subsection{SMBHs and the core size}
 Here, we study the constraints that could be placed on the slope of the density profile, the size of the stellar core, and the mass of the SMBHs in such deep observations. 
 We performed a Fisher analysis to examine the constrains and parameter degeneracies in simulations in which the central images are detected, as well as those in which they are below the detection limit. All model parameters were included in the Fisher matrix, and nuisance parameters were later marginalize over (e.g. intrinsic source flux and position) to obtain the marginalized likelihood of the relevant parameters.  
- Figure \ref{fig:4} shows the parameter covariance for two examples with different core radii (top panel:  $R_{core}$=170 pc, bottom panel: $R_{core}$=450 pc).
+ Figure \ref{fig:4} shows the parameter covariance for two simulations with different core radii (black contours:  $R_{core}$=170 pc, red contours: $R_{core}$=400 pc).
 % . As seen in Figure \ref{fig:3},  this parameter combination results in a $\sim3\sigma$ detection of the central image. 
-We found that when $\gamma=1$, core sizes larger than 100 pc can be measured with high significance. As seen in top panel of Figure \ref{fig:4}, 
-the mass of SMBH is degenerate with the core size: larger cores result in brighter images, whose flux can be supressed by a more massive SMBH.
-This degeneracy,  however,  breaks when the core size is very large. 
-Large cores produce more extended central images that are spatially resolved. The distortion caused by a SMBH can distort this image on smaller scales, resulting in a distinct dip in its surface brightness. %, which breaks the degeneracy of the SMBH with the core size (for point sources this will be observed as the plotting of the central image by the SMBH). %Rusin  Keeton Winn 2005
-We find that for cores with a radius larger than $200$ pc, central SMBH masses can be measured with high significance (e.g., bottom panel of Figure \ref{fig:4}), but for smaller core sizes, only upper limits on the mass of SMBHs can be placed.
+We found that when $\gamma=1$, core sizes larger than 100 pc can be measured with high significance. As seen in Figure \ref{fig:4}, 
+for small cores, the mass of SMBH is highly degenerate with the core size: larger cores result in brighter images, whose flux can be supressed by a more massive SMBH.
+This degeneracy,  however,  is reduced when the core size is very large: large cores produce more extended central images that are spatially resolved. The distortion caused by a SMBH can distort this image on smaller scales, resulting in a distinct dip in its surface brightness. %, which breaks the degeneracy of the SMBH with the core size (for point sources this will be observed as the plotting of the central image by the SMBH). %Rusin  Keeton Winn 2005
+We find that for cores with a radius larger than $200$ pc, central SMBH masses can be measured with high significance (e.g., bottom panel of Figure \ref{fig:4}), but for smaller core sizes, only upper limits can be placed on the mass of SMBHs.
 We also find that when the core size is larger, the constraints on the density profile slope are stronger.
 
 %\begin{framed}
@@ -248,10 +259,10 @@ We also find that when the core size is larger, the constraints on the density p
 
 \subsection{Detection of Binary SMBHs}
 We also investigated the possibility of detecting binary SMBHs using the perturbations that they induce on lensed central images. 
-We placed two SMBHs with masses of $4\times10^8 M_{\odot}$ each in a random position incise a circle of radius of 1 kpc from the center of the galaxy and, using the Fisher analysis, computed the detection significance of their masses. 
-We found that in most cases, it is not possible to measure the mass of both SMBHs, either because they are not near the central images or due to the degeneracy between their masses, their positions, and the core radius, or because the distortions in the central images are unresolved.
-However, when the central images are fairly extended (due to a shallow density slope and a large core size), a larger fraction of the inner 1 kpc region is covered by the central image, increasing the probability of lensing by SMBHs. Such images also have larger fluxes, increasing the snr of the observations and they also allow for the detection of fairly separated SMBHs. In this case the SMBHs can affect different parts of the central image, reducing the degeneracy between their masses.
-Under such conditions, we found some configurations that allowed a detection of both SMBH masses. The constraints on SMBH masses in such observations arise from the distortions in the resolved \emph{shape} of the central images. Figure \ref{fig:5} shows an example of such configuration when $\gamma = 0.9$ and $R_{\mathrm{core}}=300$ pc. Left panel shows the central image without the effects of SMBHs and the right panel shows its morphology in presence of two SMBHs. 
+We placed two SMBHs with masses of $4\times10^8 M_{\odot}$ each in random positions inside a circle of radius of 1 kpc from the center of the galaxy and, using the Fisher analysis, computed the detection significance of their masses. 
+We found that in most cases, it is not possible to measure the mass of both SMBHs, either because they are not near the central images or due to the degeneracy between their masses, their positions, and the core radius. %, or because the distortions in the central images are unresolved.
+However, when the central images are fairly extended (due to a shallow density slope and a large core size), a larger fraction of the inner 1 kpc region is covered by the central image, increasing the probability of lensing by SMBHs. Such images also have larger fluxes, increasing the signal to noise of the observations and they also allow for the detection of fairly separated SMBHs. In this case the SMBHs can affect different parts of the central image, reducing the degeneracy between their masses.
+Under such conditions, we found configurations that allowed a detection of both SMBH masses. The constraints on SMBH masses in such observations arise from the distortions in the resolved \emph{shape} of the central images. Figure \ref{fig:5} shows an example of such configuration when $\gamma = 0.9$ and $R_{\mathrm{core}}=300$ pc. Left panel shows the central image without the effects of SMBHs and the right panel shows its morphology in presence of two SMBHs. 
 
 %Such distortions, however, can only be marginally resolved with ALMA, and very long integrations may be required 
 
@@ -259,12 +270,11 @@ Under such conditions, we found some configurations that allowed a detection of 
 
 %found cases with a shallow potential and a large stellar core, which result in bright central images, we found certain configurations in which the resolved shape of the central image can allow a detection of the masses of both SMBHs. 
 
-To estimate the probability of configurations which allow detection of binary SMBHs, we simulated many realizations of the positions of the SMBHs for a high resolution (50 mas) 50-h long observation. 
+To estimate the probability of configurations which allow detection of binary SMBHs, we simulated many realizations of the positions of the SMBHs for a high resolution (50 mas) 40-h long observation. 
 We found that $\sim10\%$ of the simulations, in which the core size was larger than 200 pc, both SMBHs were detected. 
-This number is much larger than what is calculated in \citet{Li:12}, since they estimated  the probabilities for point sources, appropriate for lensed quasar samples. The extended structure of the background source can significantly increase the probability of 
+This number is much larger than what is calculated in \citet{Li:12}, since they estimated  the probabilities for point sources, appropriate for lensed quasar samples. The extended structure of the background sources studied here can significantly increase the probability of overlapping the black hole caustics, increasing the lensing cross-section by SMBHs.
 
-  Although this number may seems promising, the prospects of such measurements will be limited by the number of discovered bright central images, which based on their current dearth, may be few.
-We conclude that, only under rare conditions, and with very long observations ($>40$ hours), central image may allow us to probe binary SMBHs. The prospects of such measurement will ultimately depend on discoveries of much larger samples of lenses.
+  Although this number may seems promising, the prospects of such measurements will be limited by the number of discovered bright central images, which based on their current dearth, may be few. We conclude that, only under rare conditions, and with very long observations ($>40$ hours), central image may allow us to probe binary SMBHs. The prospects of such measurement will ultimately depend on discoveries of much larger samples of lenses.
 
 %The magnified images of the lens allow a detailed reconstruction of the background source.  It is therefore easy to distinguish that the structure in the central image is not due to the structure of the source, but are caused by lensing by binary SMBHs.
 %Since the suitability for such measurements will depend on the core size and slope of the stellar light, future high resolution observations with thirty meter telescopes, may help select systems with the right range of morphological parameters, to be followed up.
