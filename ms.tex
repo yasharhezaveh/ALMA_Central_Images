@@ -24,13 +24,12 @@
 
 \begin{abstract}  
 \noindent
-We examine the prospects of detecting demagnified images of gravitational lenses in observations of strongly lensed mm-wave molecular emission lines with ALMA. We model the lensing galaxies as a superposition of a dark matter component, a stellar component, and a central supermassive black hole and assess the detectability of the central images for a range of relevant parameters (e.g. stellar core and black hole mass).
+We examine the prospects of detecting demagnified images of gravitational lenses in observations of strongly lensed mm-wave molecular emission lines with ALMA. We model the lensing galaxies as a superposition of a dark matter component, a stellar component, and a central supermassive black hole and assess the detectability of the central images for a range of relevant parameters (e.g., stellar core and black hole mass).
 We find that over a large range of plausible parameters, future deep observations of lensed molecular lines with ALMA should enable  detection of the central images at $\gtrsim 3\sigma$ significance. We use a Fisher analysis to examine the  constraints that could be placed on these parameters in various scenarios and find that for large stellar cores, both the core size and the mass of the central SMBHs can be accurately measured. We also study the prospects for detecting binary SMBHs with such observations and find that only under rare conditions and with very long integrations ($\sim$40-hr) the masses of both SMBHs may be measured using the distortions of central images.
 
 
 \end{abstract}
 
-%in Ferarrese 2006, $r_b$ varies from ~50 to 500 pc. 
 
 
 \keywords{ black hole physics ---
@@ -40,86 +39,45 @@ galaxies: formation}
 
 
 \section{introduction}
-%\begin{framed}
 Probing the matter distribution in the innermost kpc of galaxies can answer key questions about super-massive black holes (SMBH), galaxy formation, and dark matter. It is now established that almost every massive galaxy harbors a SMBH at its center with a mass that strongly correlates with the mass of the host galaxy \citep{Kormendy:95,Ferrarese:00,Gebhardt:00,Tremaine:02}.
 In addition, the distribution of stellar populations in central regions of galaxies contains information about their past merger histories and SMBH-stellar population interactions \citep[e.g.,][]{Barnes:92,Ebisuzaki:91,Barnabe:14}.  Various dark matter models also predict different structures for the central regions of dark matter halos \citep[e.g.,][]{Rocha:13}.  Mapping the matter density in the central regions of galaxies can thus shed light on various astrophysical phenomena.
-%probing the inner 0.5 kpc of galaxies is interesting. 1) they contain SMBHs and the relationship of the SMBH mass to galaxies is intriguing and interesting. Dark matter models also have different and interesting predictions for the density of the central regions of galaxies (e.g. cored DM, or SIDM predictions). In addition, the history of galaxy mergers and black hole-stellar population interactions can be encoded in the stellar light profiles, resulting in different stellar  
-%\end{framed}
 
-%\begin{framed}
-%Stellar light profiles:
-%\\ \\
-Studies of local galaxies in optical wavelengths have shown that, unlike their lower-mass counterparts, the most massive elliptical galaxies often exhibit cored stellar light profiles, with core sizes ranging from 50 to 500 pc \citep[e.g.,][]{Ferrarese:06}. 
-These galaxies are thought to form through gas-poor or ``dry'' mergers. In such mergers, the central structure of the resulting galaxy is dominated by the inner structure of the more concentrated progenitor.  Since high-mass ellipticals are thought to form from mergers of their lower-mass counterparts, with steep profiles, the existence of cores in these galaxies represents a challenge to our understanding of galaxy merger. Cores in massive ellipticals, therefore, may be the result of a different process, such as  
+
+Studies of local galaxies at optical wavelengths have shown that, unlike their lower-mass counterparts, the most massive elliptical galaxies often exhibit cored stellar light profiles, with core sizes ranging from 50 to 500 pc \citep[e.g.,][]{Ferrarese:06}. 
+These galaxies are thought to form through gas-poor or ``dry'' mergers. In such mergers, the central structure of the resulting galaxy is dominated by the inner structure of the more concentrated progenitor.  Since high-mass ellipticals are thought to form from mergers of their lower-mass counterparts, with steep profiles, the existence of cores in these galaxies represents a challenge to our understanding of galaxy evolution. Cores in massive ellipticals, therefore, may be the result of a different process, such as  
 ``black hole scouring'' \citep{Thomas:14}.
-%\end{framed}
 
-%\begin{framed}
 It is thought that during a merger, the SMBHs of the two merging galaxies form a binary, which sinks to the center of the potential. The two orbiting SMBHs then dissipate angular momentum through three-body interactions with nearby central stars, pushing the stars to higher orbits and ``scouring out'' a core. This angular momentum loss may then allow the two black holes to merge \citep{Begelman:80}.
 Previous studies have shown that the core sizes in these galaxies scale with the mass of their SMBHs, in agreement with theoretical predictions \citep{Kormendy:09,Kormendy:13}. It should be emphasized that these black holes are expected to be present and may have larger masses than in comparable nearby galaxies \citep{Bennert:10}. Direct measurements, however have been limited to low redshifts, since both dynamical measurements to constrain the stellar and SMBH masses, and morphological measurements to constrain core sizes require very high physical resolutions. 
-% ... whatever the mechanisms are, clear measurements of the central densities can be valuable to solve this puzzle and to shed light on the connection of SMBHs and galaxies. 
-%\end{framed}
 
-%\begin{framed}
-Strong gravitational lensing is a powerful tool for probing the matter distribution in distant galaxies. Among other things, strong lenses have been used to constrain galaxy masses, density profiles, and abundance of dark matter subhalos \citep[e.g.][]{dalal:02, Gavazzi:07, Bolton:08}. For double and quad image configurations, the theory of strong lensing predicts a third and a fifth image near the centers of lensing galaxies. Unlike the other lensed images, which are magnified, this image can be significantly \emph{demagnified}\footnote{approximately as $(\Sigma/\Sigma_{crit})^{-2}$, where $\Sigma$ is the surface density and $\Sigma_{crit}$ is the critical surface density}, making its detection difficult \citep[e.g.,][]{Jackson:13}.  It is well-understood that the magnification of the central images is very sensitive to the matter distribution in the innermost regions of lens galaxies: very steep density profiles significantly demagnify the central images, whereas cored or shallow profiles render them brighter (Figure \ref{fig1}). %Lack of detection of central images in almost all lenses suggests steep central density profiles in lens galaxies. 
+
+Strong gravitational lensing is a powerful tool for probing the matter distribution in distant galaxies. Among other things, strong lenses have been used to constrain galaxy masses, density profiles, and abundance of dark matter subhalos \citep[e.g.,][]{dalal:02, Gavazzi:07, Bolton:08}. For double and quad image configurations, the theory of strong lensing predicts a third and a fifth image near the centers of lensing galaxies. Unlike the other lensed images, which are magnified, this image can be significantly \emph{demagnified}\footnote{approximately as $(\Sigma/\Sigma_{crit})^{-2}$, where $\Sigma$ is the surface density and $\Sigma_{crit}$ is the critical surface density}, making its detection difficult \citep[e.g.,][]{Jackson:13}.  It is well-understood that the magnification of the central images is very sensitive to the matter distribution in the innermost regions of lens galaxies: very steep density profiles significantly demagnify the central images, whereas cored or shallow profiles render them brighter (Figure \ref{fig1}). 
 
 In addition to their low flux, the fact that central images coincide with the emission from lens galaxies makes their detection even harder. Distinguishing the central images from emission originating in the lens galaxies is extremely challenging.
-Moreover, if observed in the optical, absorption in the central dense regions of the lens can make the central images even dimmer, while the photon noise from the lens emission further reduces the sensitivity. 
-
-
-%5) Additionally, another reason for lack of detection is that the central image is located at the center of the lensing galaxy, where i) the sensitivity is lower, due to photon noise of the lens ii) it is difficult to distinguish the flux of the central image from the emission from the lens. iii) if in optical, since they pass through the centers of galaxies there's a high chance of large absorption (in the lens)
-
-%Such central images, however, have been very rarely detected, suggesting that steep density profiles of galaxies render them 
-%4) typically only an even number of images are observed,  suggesting that the central images are demagnified below the sensitivity of instruments. \\ \\
-
-%\end{framed}
+If observed in the optical, absorption in the central dense regions of the lens can make the central images even dimmer, while the photon noise from the lens emission further reduces the sensitivity. 
 
 
 
-The individual behavior and statistical properties of central images in lensed populations have been extensively studied \citep[e.g.][]{Wallington:93, Evans:02, Keeton:03}. These studies show that central images could have a wide range of magnifications \citep[e.g.,][]{Keeton:03}. 
+
+The individual behavior and statistical properties of central images in lensed populations have been extensively studied \citep[e.g.,][]{Wallington:93, Evans:02, Keeton:03}. These studies show that central images could have a wide range of magnifications \citep[e.g.,][]{Keeton:03}. 
 Observational searches for these images have found a number of candidates. Although observations
-of central images in group and cluster lenses are not uncommon \citep[e.g.,][]{Inada:08}, only one secure detections of a central image of a galaxy-scale lens exists to date \citep{Winn:04}. To avoid the possibility of absorption in the lens, most searches have focused on lensed radio quasars and the radio spectrum of candidate central images have been used to distinguish them from potential faint emission from the lens galaxies \citep[e.g.,][]{Zhang:07}.
+of central images in group and cluster lenses are not uncommon \citep[e.g.,][]{Inada:08}, only one secure detection of a central image of a galaxy-scale lens exists to date \citep{Winn:04}. To avoid the possibility of absorption in the lens, most searches have focused on lensed radio sources. The radio spectrum of candidate central images have been used to distinguish them from potential faint emission from the lens galaxies \citep[e.g.,][]{Zhang:07}.
 
-%To avoid confusion between a central image and faint radio emission from the lens galaxies 
-
-%a review of central image observations and studies:\\ \\
-%1) The individual and statistical properties of central images have been previously studied. (e.g. Wallington 1993, Evans \& Hunter 2002, Keeton 2003, ) \\ \\
-%2) to avoid absorption by, and lack of contamination from the main lens, past studies focused on radio lens quasars. \\ \\
-%3) for example, Rusin \&  Ma 2001 set constrains on the inner profiles of lens galaxies form observations of six two-image radio-loud lens systems \\ \\
-%4) confusion between a central image, and faint radio emission from the lens galaxy, could be avoided by studying the radio spectrum of a candidate central image.   
-%5) the only secure detection of a central image (based on its radio spectrum)  in a galaxy-mass lensing system, is PMNJ 1632?0033 (Winn et al. 2002, 2003, 2004),   \\ \\
-%6) Winn et al 2004 used the detection of this central image to place constraints on the mass of the central SMBH.
-%\end{framed}
-
-
-%\begin{framed}
-A new large population of strong lenses has recently been discovered in mm-bands. These systems were initially detected as bright point sources in wide area mm/submm surveys \citep{vieira:10,negrello:10}. Follow-up observations have confirmed that they constitute a large population of strong lenses \citep{vieira:13, hezaveh:13b, bussmann:13}.
-In particular, ALMA observations of these sources have revealed that the background galaxies are dusty, starburst, high redshift galaxies, containing a wealth of cold molecular gas \citep{Weiss:13}.  These observations showed that the extreme brightness of the sources, in combination with the high sensitivity of ALMA, result in very high signal to noise observations\footnote{For example, the lens models in \citet{hezaveh:13b} were based on just $\sim50$ second long observations.}.
+A new large population of strong lenses has recently been discovered in mm-wave. These systems were initially detected as bright point sources in wide area mm/submm surveys \citep{vieira:10,negrello:10}. Follow-up observations have confirmed that they constitute a large population of strong lenses \citep{vieira:13, hezaveh:13b, bussmann:13}.
+In particular, high resolution ALMA followup observations of these sources have revealed that the background galaxies are dusty, starburst, high redshift galaxies, containing a wealth of cold molecular gas \citep{Weiss:13}.  These observations showed that the extreme brightness of the sources, in combination with the high sensitivity of ALMA, result in very high signal to noise observations\footnote{For example, the lens models in \citet{hezaveh:13b} were based on just $\sim50$ second long observations.}.
 Motivated by the discovery of this population and the operation of ALMA, here we revisit the issue of detecting central images.
 Deep ALMA observations of molecular line emission in these sources are likely to be carried out for various reasons \citep[e.g.,][]{hezaveh:14a,hezaveh:14b}. If a central image of a lensed molecular line is detected in such observations, it will be readily identifiable, since it will correspond to the redshift of the source, leaving no doubt about its origin. In addition, since these lines are in mm-wave, the line fluxes are very unlikely to be suppressed by absorption in the lens. 
-In contrast to lensed quasars, the sources are extended over hundreds of parsecs and suffer a range of demagnifications.
- This can allow them to overlap with the less demagnified regions of the source plane, further increasing the flux of the central images \citep[analogous to magnification damping of highly magnified images due to finite source effects, see e.g.,][]{hezaveh:11}.
+In contrast to lensed quasars, the sources are extended over hundreds of parsecs and suffer a range of demagnifications, further increasing the flux of the central images \citep[analogous to magnification damping of highly magnified images due to finite source effects, see e.g.,][]{hezaveh:11}.
 
  In this letter, we explore the possibility of detecting central lensed images in such deep observations and investigate the constraints that could be placed on the core size, mass of SMBHs, and the slope of the density profiles from detection, or non-detection of such images. We also examine if 
  such observations can possibly detect binary SMBHs, using the distortions they may cause in the central images. 
  In Section 2 we describe the simulations, in Section 3 we present the results and discuss them, and finally conclude in Section 4. We use a flat $\Lambda$CDM cosmology with $h=0.71$ and $\Omega_M=0.267$.
  
-% the distribution of matter in the innermost regions of galaxies from detection or non-detection of such central images.\\ \\
-%3) the paper is organized as: section 2 describes the simulations, section 3 presents the results and discuss them and conclude in section 5 \\ \\
-%4) we use $\Lambda$CDM cosmology of XXX
-
-%\begin{framed}
-%motivation and description of the paper: \\ \\
-%1) Long ALMA observations of these molecular lines are likely to be carried out for various reasons (e.g. power spectrum of dark matter, measuring the mass of background black holes) .  \\ \\
-%2) In this paper we explore the possibility of detection of these central images in such deep observations, and investigate what we could learn about the innermost regions of galaxies from detection or non-detection of such central images.\\ \\
-%3) the paper is organized as: section 2 describes the simulations, section 3 presents the results and discuss them and conclude in section 5 \\ \\
-%4) we use $\Lambda$CDM cosmology of XXX
-%\end{framed}
 
 \begin{figure}
 \begin{center}
 \centering
-\includegraphics[trim= 10 0 0 0, clip, width=0.48\textwidth]{f_02.eps}
+\includegraphics[trim= 10 0 0 0, clip, width=0.48\textwidth]{figures/f_02.eps}
 \centering
 \end{center}
 \caption{ Left panel shows the strongly lensed images of a background source, when the lensing potential is very steep and cuspy, resulting in large demagnification (and disappearance) of the central image.  The right panel shows images for the same lens parameters and a core of 400 pc. The red box is centered on the  central image.
@@ -129,7 +87,7 @@ In contrast to lensed quasars, the sources are extended over hundreds of parsecs
 \begin{figure}
 \begin{center}
 \centering
-\includegraphics[trim= 0 0 5 6, clip, width=0.48\textwidth]{f_01.eps}
+\includegraphics[trim= 0 0 5 6, clip, width=0.48\textwidth]{figures/f_01.eps}
 \centering
 \end{center}
 \vspace{-1mm}
@@ -140,59 +98,38 @@ In contrast to lensed quasars, the sources are extended over hundreds of parsecs
 
 
 \section{Simulations}
-We generated lensed images of background sources, predicted ALMA visibilities, and used them to estimate the detection significance of central images for various parameters. We simulated observations of a high-$J$ CO line. The line is assumed to have a velocity integrated flux of 1 Jy km/s and a FWHM of 400 km/s, resulting in an average flux of 2.5 mJy over a 400 km/s band, a typical value for high redshift dusty galaxies \citep{Bothwell:12}. 
+We generated lensed images of background sources, predicted ALMA visibilities, and used them to estimate the detection significance of central images for various parameters. We simulated observations of a high-$J$ CO line. The line is assumed to have a velocity integrated flux of 1 Jy km/s and a FWHM of 400 km/s, resulting in an average flux of 2.5 mJy over a 400 km/s band, a typical value for high redshift, dusty galaxies \citep{Bothwell:12}. 
 
-We modeled the lens potential as a sum of three components: dark matter, stellar population and a single central SMBH. The dark matter component was modeled as a singular power-law with a slope of 0.1, in agreement with the projected surface mass density of the NFW profile in the innermost regions \citep{Golse:02}. As  pointed out by \citet{Keeton:03}, due to its expected flatness in these regimes, the dark matter component has negligible influence on the central images \red{(although models with dark matter cusps have been entertained)}. 
-The stellar population is modeled as a a cored power-law, $\Sigma(r)\propto (r^2+R_{\mathrm{core}}^2)^{\gamma}$. Figure \ref{fig2} shows the stellar component (red curve), dark matter component (black dashed curve) and the sum of the two (black solid curve). The grey dashed curves show a few examples of core-sersic models with parameters taken from \citet{Ferrarese:06}. Although the cored power-law model used in this work does not account for the slope of the stellar distribution below the core break, it is a close fit and a reasonable model to approximate the observed stellar light profiles in the inner few kpc. 
-The black hole was modeled as a simple point mass at the center of the potential. We assumed that all the three components are concentric, \red{though we note that two- and three-black hole interactions may may invalidate this assumption.}
+We modeled the lens potential as a sum of three components: dark matter, stellar population and a single central SMBH. The dark matter component was modeled as a singular power-law with a slope of 0.1, in agreement with the projected surface mass density of the NFW profile in the innermost regions \citep{Golse:02}. As  pointed out by \citet{Keeton:03}, due to its expected flatness in these regimes, the dark matter component has negligible influence on the central images (although models with dark matter cusps have been entertained). 
+The stellar population is modeled as a a cored power-law, $\Sigma(r)\propto (r^2+R_{\mathrm{core}}^2)^{\gamma_s}$. Figure \ref{fig2} shows the stellar component (red curve), dark matter component (black dashed curve) and the sum of the two (black solid curve). The grey dashed curves show a few examples of core-sersic models with parameters taken from \citet{Ferrarese:06}. Although the cored power-law model used in this work does not account for the slope of the stellar distribution below the core break, it is a close fit and a reasonable model to approximate the observed stellar light profiles in the inner few kpc. 
+The black hole was modeled as a simple point mass at the center of the potential. We assumed that all the three components are concentric, though we note that two- and three-black hole interactions may invalidate this assumption.
 The stellar and dark mass of the lens were normalized such that they each contain $1.5\times10^{11} M_{\odot}$ in a radius of 10 kpc. The resulting Einstein radius is of order 1 arcsec, in agreement with galaxy-galaxy strong lenses \citep[e.g.,][]{hezaveh:13b}.
-%lens mass was set to XX $M_{\odot}$ resulting in an Einstein radius of $\sim XX''$, in agreement with galaxy-galaxy strong lenses. We divide this mass equally (in a radius of 10 kpc) between stellar and dark matter. 
 To predict the visibilities, we calculated the ALMA $uv$-coverage of a 10-$hr$ long observation (full array), using the $simobserve$ task of Common Astronomy Software Applications package, for an observing frequency of 150 GHz. 
 The model visibilities were calculated by computing the 2D Fourier transform of the surface brightness data maps and resampling the Fourier transform maps over the $uv$-coverage. 
 The noise was estimated using ALMA sensitivity calculator for a channel width of 400 km/s at 150 GHz. 
 
 
-For simulations where we calculated the detection significance of the demagnified image, we computed the magnification at every pixel in the image plane and generated maps with and without the the demagnified flux and evaluated the detection significance of the central image by comparing the two images. In other simulations, where the constrains on parameters are needed, we used a Fisher analysis to compute the full covariance of all parameters. 
-We used finite differencing of visibilities to calculate the gradients, and marginalize over the nuisance parameters (e.g. source position, lens ellipticity) to calculate the marginalized likelihood of the relevant parameters. 
-
-
-%\begin{framed} description
-
-%The gas in the source galaxy is modeled as a collection of 5 Gaussian clumps with FWHM of XX, distributed over XX kpc and each separated in a different channel.
-%and an intrinsic velocity dispersion  of 10 $km/s$ (FWHM) similar to observations of \citet{Davis:13}. 
-%The choice of two discrete rings is made to enforce resolving the inner 50 pc region for a black hole mass measurement. We point out, however, that assuming a more general case (e.g. an exponential disk) does not change the results \citep[see Figure 2 of ][]{Davis:2014}.
-%The velocity integrated flux of the circumnuclear ring is set to 4 $mJy\, km/s$. 
-%This value is calculated by scaling the flux of the circumnuclear CO gas in Arp 220 to to z=2 \citep{Sakamoto:99}.
-%The rings are concentric and in circular orbits. The rotational velocity of each point in the rings is calculated based on the enclosed mass contributed from the galaxy mass model and the mass of the central black hole. The black hole is given a mass of $M_{\mathrm{BH}}=5\times 10^{8} M_{\odot}$.
-%We model the galaxy density with an isothermal profile ($\rho\propto r^{-2}$) with a central velocity dispersion of 200 km/s. 
-%The line-of-sight velocities are calculated to generate a frequency-position data cube. Figure \ref{f:f1} shows a velocity-position diagram extracted from the data cube. The data comprises 100 frequency channels covering 800 km/s. 
-
-
-%Each layer of the data cube is lensed with the foreground halo to  generate a lensed cube. We use a Singular Isothermal Ellipsoid (SIE) mass model for the lens galaxy \citep[$\rho\propto r^{-2}$,][]{Kormann:94}, placed at $z_l=0.5$ and place the source at $z_s=2.0$. The central velocity dispersion of the lens is set to 180 $km/s$, which is typical for galaxy-galaxy lensing systems \citep[e.g.][]{hezaveh:13b}. 
+For simulations where we calculated the detection significance of the demagnified image, we computed the magnification at every pixel in the image plane and generated maps with and without the the demagnified flux and evaluated the detection significance of the central image by comparing the two resulting visibility sets. In other simulations, where the constrains on parameters were needed, we used a Fisher analysis to compute the full covariance of all parameters. 
+We used finite differencing of visibilities to calculate the gradients, and marginalize over the nuisance parameters (e.g., source position, lens ellipticity), assuming uniform priors, to calculate the posterior of the relevant parameters. 
 
 
 
-%\end{framed}
 
-%\newpage
 
 \begin{figure}
 \begin{center}
 \centering
-\includegraphics[trim= 0 0 0 0, clip,width=0.48\textwidth]{f_03.eps}
+\includegraphics[trim= 0 0 0 0, clip,width=0.48\textwidth]{figures/f_03.eps}
 \centering
 \end{center}
 \caption{ Detection significance of a central image, as a function of the stellar core size for a 10-hr long ALMA observation. 
 The fiducial model (solid black curve) corresponds to $\gamma_{stellar}=1.0$, $M_{\mathrm{BH}}=2\times10^8 M_{\odot}$, and a source size of 500 pc (radius). The dashed black curve shows the detection significance when the SMBH is removed and the solid red curve shows the effect of a steeper density profile ($\gamma_{\mathrm{stellar}}=1.1$). The solid blue and gray dotted curves show the detections for a source with a radius of 1 kpc and 250 pc respectively. 
-%The gray shades correspond to different slopes for the stellar component. The solid curves correspond to a case without a SMBH while the dashed curves show the results when a $2\times10^8M_{\odot}$ SMBH is placed at the center of the lens.
-%The source has a Gaussian light profile with an rms of 600 pc. The red curves show the same predictions when $\gamma=1$, for a source with rms of 300 pc.
 \label{fig:3}}
 \end{figure}
 
 \section{Results and Discussions}
 \subsection{Detection of central images with ALMA}
-%In this section, we estimate the detection significance of central lensed images of molecular lines with ALMA. 
-The fluxes of central images depend principally on the slope of the lensing potential, the core size, and the mass of the central SMBHs.  Figure \ref{fig:3} shows the detection significance of a central image for a range of these parameters in a 10-h long ALMA observation. 
+The fluxes of central images depend principally on the slope of the lensing potential, the core size, and the mass of the central SMBHs.  Figure \ref{fig:3} shows the detection significance of a central image for a range of these parameters in a 10-hr long ALMA observation. 
 The figure shows the detection significance of the demagnified central flux, as a function of the stellar core size.
 The fiducial model (black curve) has a stellar profile slope of $\gamma_s=1.0$, and a $2\times10^8M_{\odot}$ SMBH, with a background source 
 with a Gaussian profile with an rms of 500 pc.  The red curve shows the effect of a steeper density slope, suppressing the flux of the central image. 
@@ -200,21 +137,21 @@ with a Gaussian profile with an rms of 500 pc.  The red curve shows the effect o
 
 
 
-As seen in this figure, larger stellar cores result in brighter images. %Lensing studies have shown that the total profiles of galaxies are very close to isothermal \red{cite{}}. 
-In the absence of a massive black hole, when $\gamma=1.0$ and with a core size larger than 150 pc, such observations should be able to detect the central images with more than $5\sigma$ significance. For significantly shallower ($\gamma<0.8$) profiles and larger cores, the central image is \emph{magnified} and its detection should be trivial.  The magnification and flux of central images is also influenced by SMBHs.
+As seen in this figure, larger stellar cores result in brighter images. 
+In the absence of a massive black hole, when $\gamma_s=1.0$ and with a core size larger than 150 pc, such observations should be able to detect the central images with more than $5\sigma$ significance. For significantly shallower ($\gamma_s<0.8$) profiles and larger cores, the central image is \emph{magnified} and its detection should be trivial.  The magnification and flux of central images is also influenced by SMBHs.
 SMBHs demagnify the images on scales comparable to the size of their Einstein radii ($\sim30$ mas for a $2\times10^8M_{\odot}$ SMBH).
 The dashed curves in Figure \ref{fig:3} show the suppression of the fluxes of central images in presence of a $2\times10^8M_{\odot}$ SMBH.
 
-As seen in Figure \ref{fig:3}, and as pointed out by \citet{Keeton:03}, plausible parameters predict  a wide range of magnifications for   central images. Although for some parameter combinations (e.g., $\gamma_{s}=1.1,$ $M_{BH} = 2\times10^8 M_{\odot}$,$R_{core}<200 pc$ ) there is little chance of detecting the central images, over a non-negligable fraction of parameter space the central images may be detectable. 
+As seen in Figure \ref{fig:3}, and as pointed out by \citet{Keeton:03}, plausible parameters predict  a wide range of magnifications for   central images. Although for some parameter combinations (e.g., $\gamma_{s}=1.1,$ $M_{\mathrm{BH}} = 2\times10^8 M_{\odot}$,$R_{\mathrm{core}}<200$ pc ) there is little chance of detecting the central images, they may be detectable over a non-negligible fraction of the parameter space.
 
-We also find that the detection significance of the central images can significantly increase for an extended source with a radius of 1 kpc compared to a point source. Since extended sources occupy a larger area of the source plane, which may cover regions with higher magnifications, the resulting flux can be larger than the flux of more compact sources. The solid blue curve in Figure \ref{fig:3} shows increase in the flux of the demagnified image for a larger source (with a radius of 1 kpc). In contrast, the flux of a source with a radius of 250 pc can be severely supressed (dotted grey curve). 
-As the source galaxies are undergoing prodigious star formation, these large source sizes are reasonable and in agreement with observations \cite{hezaveh:13b}.
-More extended and intrinsically brighter emission lines such as C[II], the brightest molecular line in high redshift galaxies, are therefore the most ideal targets for such observations.
+We also find that the detection significance of the central images can significantly \emph{increase} for an extended source with a radius of 1 kpc compared to a point source. Since extended sources occupy a larger area of the source plane, which may cover regions with higher magnifications, the resulting flux can be larger than the flux of more compact sources. The solid blue curve in Figure \ref{fig:3} shows the increase in the flux of the demagnified image for a larger source (with a radius of 1 kpc). In contrast, the flux of a source with a radius of 250 pc can be severely supressed (dotted grey curve). 
+As the source galaxies are undergoing prodigious star formation, these large source sizes are reasonable and in agreement with observations \citep{hezaveh:13b}.
+More extended and intrinsically brighter emission lines such as C[II], the brightest molecular line in high redshift galaxies, may therefore be the most ideal targets for such observations.
 
 \begin{figure}
 \begin{center}
 \centering
-\includegraphics[trim= 2 5 0 0, clip, width=0.48\textwidth]{f_04.eps}
+\includegraphics[trim= 2 5 0 0, clip, width=0.48\textwidth]{figures/f_04.eps}
 \centering
 \end{center}
 \caption{ Parameter covariance matrices for two simulations (after marginalization over nuisance parameters). Black curves show that when the core size is small, the mass of the SMBH is not measured with high precision and only an upper limit can be placed on it. The bottom panel, shows that for larger core sizes, the mass of the SMBH could be measured with high significance. 
@@ -222,35 +159,17 @@ More extended and intrinsically brighter emission lines such as C[II], the brigh
 \end{figure}
 
 
-%\begin{framed}
-%1) We evaluate the detection significance of central images over a range of relevant parameters. \\ \\
-%2) Figure 4 shows our results for a 10-hr long observation with ALMA\\ \\
-%3) we show that, as expected, the image is fainter for steeper profile slopes. \\ \\
-%4) the 0.9 value (combined with 0.1 DM) results in the isothermal profile, which has been shown to be consistent with strong lensing data \\ \\
-%5) if that's the case, and in the absence of massive BHs, then stellar cores as small as $\sim80$ pc should allow a 5$\sigma$ detection of the central images. \\ \\
-%5A) we note that for much shallower density profiles, the central image is actually \emph{magnified}, and therefore it's detection should be trivial.\\ \\
-%6) the flux is significantly supressed by the central SMBH \\  \\
-%7) the dashed curves show the same for a galaxy with a $2e8M_{\odot}$ SMBH. \\ \\
-%8) we note that, as pointed out in Keeton 2003, there's a large range of possibilities for plausible lens parameters: although for some parameter combinations (e.g., $\gamma_{s}=1.2,$ $M_{BH} = 2e8$,$R_{core}<300 pc$ ) there is no chance of detecting the central image, over a significant fraction of allowed parameters the central image could be detected. \\ \\
-%9) to calculate this plot we have used a configuration XX, because: it allows us to resolve the central image (if existent), while it is more sensitive that more extended configurations.  In addition, this is the configuration that will be likely used for other projects/sciences.
-%\end{framed}
-
 
 \subsection{SMBHs and the core size}
 Here, we study the constraints that could be placed on the slope of the density profile, the size of the stellar core, and the mass of the SMBHs in such deep observations. 
-We performed a Fisher analysis to examine the constrains and parameter degeneracies in simulations in which the central images are detected, as well as those in which they are below the detection limit. All model parameters were included in the Fisher matrix, and nuisance parameters were later marginalize over (e.g. intrinsic source flux and position) to obtain the marginalized likelihood of the relevant parameters.  
- Figure \ref{fig:4} shows the parameter covariance for two simulations with different core radii (black contours:  $R_{core}$=170 pc, red contours: $R_{core}$=400 pc).
-% . As seen in Figure \ref{fig:3},  this parameter combination results in a $\sim3\sigma$ detection of the central image. 
-We found that when $\gamma=1$, core sizes larger than 100 pc can be measured with high significance. As seen in Figure \ref{fig:4}, 
+We performed a Fisher analysis to examine the constraints and parameter degeneracies in simulations in which the central images were detected, as well as those in which they were below the detection limit. All model parameters were included in the Fisher matrix, and nuisance parameters were later marginalize over (e.g. intrinsic source flux and position).  
+ Figure \ref{fig:4} shows the parameter covariance for two simulations with different core radii (black contours:  $R_{\mathrm{core}}$=170 pc, red contours: $R_{\mathrm{core}}$=400 pc).
+We found that when $\gamma_s=1$, core sizes larger than 100 pc can be measured with high significance. As seen in Figure \ref{fig:4}, 
 for small cores, the mass of SMBH is highly degenerate with the core size: larger cores result in brighter images, whose flux can be supressed by a more massive SMBH.
-This degeneracy,  however,  is reduced when the core size is very large: large cores produce more extended central images that are spatially resolved. The distortion caused by a SMBH can distort this image on smaller scales, resulting in a distinct \emph{dip} in its surface brightness. %, which breaks the degeneracy of the SMBH with the core size (for point sources this will be observed as the plotting of the central image by the SMBH). %Rusin  Keeton Winn 2005
+This degeneracy,  however,  is reduced when the core size is very large: large cores produce more extended central images that are spatially resolved. The distortion caused by a SMBH can distort this image on smaller scales, resulting in a distinct, resolved \emph{dip} in its surface brightness. 
 We find that for cores with a radius larger than $200$ pc, central SMBH masses can be measured with high significance (e.g., red contours in Figure \ref{fig:4}), but for smaller core sizes, only upper limits can be placed on the mass of SMBHs.
 We also find that when the core size is larger, the constraints on the density profile slope are stronger.
 
-%\begin{framed}
-%9) we note that the constraints in this case will be of similar strength to those of Winn 2004. \\ \\ 
-%12) we note that all these parameter combinations are plausible choices, and therefore long observations such as these will be able to either measure these parameters with confidence or place strong constraints on them.
-%\end{framed}
 
 
 
@@ -258,7 +177,7 @@ We also find that when the core size is larger, the constraints on the density p
 \begin{figure}
 \begin{center}
 \centering
-\includegraphics[trim= 20 0 20 0, width=0.46\textwidth]{f_05.eps}
+\includegraphics[trim= 20 0 20 0, width=0.46\textwidth]{figures/f_05.eps}
 \centering
 \end{center}
 \caption{ Lensing of a central image by two SMBHs with masses of $4\times 10^8M_{\odot}$. The left panel shows the simulated central image. The red crosses show the positions of the SMBHs. The white circle has a radius of 1 kpc  from the center of the galaxy. The right panel shows the same data after convolution with the ALMA beam. The beam is shown in the lower panel.
@@ -273,26 +192,18 @@ We also find that when the core size is larger, the constraints on the density p
 
 \subsection{Detection of Binary SMBHs}
 We also investigated the possibility of detecting binary SMBHs using the perturbations that they induce on lensed central images. 
-\red{In principle, several black holes could be held up in ??? orbits in these young massive galaxies.}
+In principle, several black holes could be held up in orbits in these young massive galaxies.
 We placed two SMBHs with masses of $4\times10^8 M_{\odot}$ each in random positions inside a circle of radius of 1 kpc from the center of the galaxy and, using the Fisher analysis, computed the detection significance of their masses. 
-We found that in most cases, it is not possible to measure the mass of both SMBHs, either because they are not near the central images or due to the degeneracy between their masses, their positions, and the core radius. %, or because the distortions in the central images are unresolved.
+We found that in most cases, it is not possible to measure the mass of both SMBHs, either because they are not near the central images or due to the degeneracy between their masses, their positions, and the core radius. 
 However, when the central images are fairly extended (due to a shallow density slope and a large core size), a larger fraction of the inner 1 kpc region is covered by the central image, increasing the probability of lensing by SMBHs. Such images also have larger fluxes, increasing the signal to noise of the observations and they also allow for the detection of fairly separated SMBHs. In this case, the SMBHs can affect different parts of the central image, reducing the degeneracy between their masses.
-Under such conditions, we found configurations that allowed a detection of both SMBH masses. The constraints on SMBH masses in such observations arise from the distortions in the resolved \emph{shape} of the central images. Figure \ref{fig:5} shows an example of such configuration when $\gamma = 0.9$ and $R_{\mathrm{core}}=300$ pc. Left panel shows the central image without the simulated central image, with the positions of SMBHs marked with red crosses. The distortion in the central image by the SMBHs is clearly visible. The right panel shows the same image after convolution with ALMA beam. Both SMBHs are detected at $\sim5\sigma$.
+Under such conditions, we found configurations that allowed a detection of both SMBH masses. The constraints on SMBH masses in such observations arise from the distortions in the resolved \emph{shape} of the central images. Figure \ref{fig:5} shows an example of such configuration when $\gamma_s = 0.9$ and $R_{\mathrm{core}}=300$ pc. Left panel shows the central image with the positions of SMBHs marked with red crosses. The distortion in the central image by the SMBHs is clearly visible. The right panel shows the same image after convolution with ALMA beam. Both SMBHs are detected at $\sim5\sigma$.
 
-%Such distortions, however, can only be marginally resolved with ALMA, and very long integrations may be required 
 
-%The positions of the SMBHs are marked with red crosses. 
-
-%found cases with a shallow potential and a large stellar core, which result in bright central images, we found certain configurations in which the resolved shape of the central image can allow a detection of the masses of both SMBHs. 
-
-To estimate the probability of configurations which allow detection of binary SMBHs, we simulated many realizations of the positions of the SMBHs for a high resolution (50 mas) 40-h long observation. 
+To estimate the probability of configurations which allow detection of binary SMBHs, we simulated many realizations of the positions of the SMBHs for a high resolution 40-h long observation. 
 We found that $\sim10\%$ of the simulations, in which the core size was larger than 200 pc, both SMBHs were detected. 
-This number is much larger than what is calculated in \citet{Li:12}, since they estimated  the probabilities for point sources, appropriate for lensed quasar samples. The extended structure of the background sources studied here can significantly increase the probability of overlapping the black hole caustics, increasing the lensing cross-section by SMBHs.
+This number is much larger than what is calculated in \citet{Li:12}, since they estimated  the probabilities for point sources, appropriate for lensed quasar samples. The extended structure of the background sources studied here can significantly increase the probability of overlapping the black hole caustics, increasing the lensing cross-section of SMBHs.
 
   Although this number may seems promising, the prospects of such measurements will be limited by the number of discovered bright central images, which based on their current dearth, may be few. We conclude that, only under rare conditions, and with very long observations ($>40$ hours), central image may allow us to probe binary SMBHs. The prospects of such measurement will ultimately depend on discoveries of much larger samples of lenses and the dynamical evolution of the black holes.
-
-%The magnified images of the lens allow a detailed reconstruction of the background source.  It is therefore easy to distinguish that the structure in the central image is not due to the structure of the source, but are caused by lensing by binary SMBHs.
-%Since the suitability for such measurements will depend on the core size and slope of the stellar light, future high resolution observations with thirty meter telescopes, may help select systems with the right range of morphological parameters, to be followed up.
 
 
 
@@ -315,8 +226,221 @@ Department of Energy under contract number DE-AC02-76SF00515.
 }
 
 \bibliographystyle{apj}
-\bibliography{references}
+%\bibliography{references}
 
+\begin{thebibliography}{36}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Barnab{\`e}} {et~al.}(2014){Barnab{\`e}}, {Spiniello}, \&
+  {Koopmans}}]{Barnabe:14}
+{Barnab{\`e}}, M., {Spiniello}, C., \& {Koopmans}, L.~V.~E. 2014, ArXiv
+  e-prints, 1409.4197
+
+\bibitem[{{Barnes} \& {Hernquist}(1992)}]{Barnes:92}
+{Barnes}, J.~E., \& {Hernquist}, L. 1992, \araa, 30, 705
+
+\bibitem[{{Begelman} {et~al.}(1980){Begelman}, {Blandford}, \&
+  {Rees}}]{Begelman:80}
+{Begelman}, M.~C., {Blandford}, R.~D., \& {Rees}, M.~J. 1980, \nat, 287, 307
+
+\bibitem[{{Bennert} {et~al.}(2010){Bennert}, {Treu}, {Woo}, {Malkan}, {Le
+  Bris}, {Auger}, {Gallagher}, \& {Blandford}}]{Bennert:10}
+{Bennert}, V.~N., {Treu}, T., {Woo}, J.-H., {et~al.} 2010, \apj, 708, 1507,
+  0911.4107
+
+\bibitem[{{Bolton} {et~al.}(2008){Bolton}, {Treu}, {Koopmans}, {Gavazzi},
+  {Moustakas}, {Burles}, {Schlegel}, \& {Wayth}}]{Bolton:08}
+{Bolton}, A.~S., {Treu}, T., {Koopmans}, L.~V.~E., {et~al.} 2008, \apj, 684,
+  248, 0805.1932
+
+\bibitem[{{Bothwell} {et~al.}(2013){Bothwell}, {Smail}, {Chapman}, {Genzel},
+  {Ivison}, {Tacconi}, {Alaghband-Zadeh}, {Bertoldi}, {Blain}, {Casey}, {Cox},
+  {Greve}, {Lutz}, {Neri}, {Omont}, \& {Swinbank}}]{Bothwell:12}
+{Bothwell}, M.~S., {Smail}, I., {Chapman}, S.~C., {et~al.} 2013, \mnras, 429,
+  3047, 1205.1511
+
+\bibitem[{{Bussmann} {et~al.}(2013){Bussmann}, {P{\'e}rez-Fournon}, {Amber},
+  {Calanog}, {Gurwell}, {Dannerbauer}, {De Bernardis}, {Fu}, {Harris}, {Krips},
+  {Lapi}, {Maiolino}, {Omont}, {Riechers}, {Wardlow}, {Baker}, {Birkinshaw},
+  {Bock}, {Bourne}, {Clements}, {Cooray}, {De Zotti}, {Dunne}, {Dye}, {Eales},
+  {Farrah}, {Gavazzi}, {Gonz{\'a}lez Nuevo}, {Hopwood}, {Ibar}, {Ivison},
+  {Laporte}, {Maddox}, {Mart{\'{\i}}nez-Navajas}, {Michalowski}, {Negrello},
+  {Oliver}, {Roseboom}, {Scott}, {Serjeant}, {Smith}, {Smith}, {Streblyanska},
+  {Valiante}, {van der Werf}, {Verma}, {Vieira}, {Wang}, \&
+  {Wilner}}]{bussmann:13}
+{Bussmann}, R.~S., {P{\'e}rez-Fournon}, I., {Amber}, S., {et~al.} 2013, \apj,
+  779, 25, 1309.0836
+
+\bibitem[{{Dalal} \& {Kochanek}(2002)}]{dalal:02}
+{Dalal}, N., \& {Kochanek}, C.~S. 2002, \apj, 572, 25, astro-ph/0111456
+
+\bibitem[{{Ebisuzaki} {et~al.}(1991){Ebisuzaki}, {Makino}, \&
+  {Okumura}}]{Ebisuzaki:91}
+{Ebisuzaki}, T., {Makino}, J., \& {Okumura}, S.~K. 1991, \nat, 354, 212
+
+\bibitem[{{Evans} \& {Hunter}(2002)}]{Evans:02}
+{Evans}, N.~W., \& {Hunter}, C. 2002, \apj, 575, 68, astro-ph/0204206
+
+\bibitem[{{Ferrarese} \& {Merritt}(2000)}]{Ferrarese:00}
+{Ferrarese}, L., \& {Merritt}, D. 2000, \apjl, 539, L9, astro-ph/0006053
+
+\bibitem[{{Ferrarese} {et~al.}(2006){Ferrarese}, {C{\^o}t{\'e}}, {Jord{\'a}n},
+  {Peng}, {Blakeslee}, {Piatek}, {Mei}, {Merritt}, {Milosavljevi{\'c}},
+  {Tonry}, \& {West}}]{Ferrarese:06}
+{Ferrarese}, L., {C{\^o}t{\'e}}, P., {Jord{\'a}n}, A., {et~al.} 2006, \apjs,
+  164, 334, astro-ph/0602297
+
+\bibitem[{{Gavazzi} {et~al.}(2007){Gavazzi}, {Treu}, {Rhodes}, {Koopmans},
+  {Bolton}, {Burles}, {Massey}, \& {Moustakas}}]{Gavazzi:07}
+{Gavazzi}, R., {Treu}, T., {Rhodes}, J.~D., {et~al.} 2007, \apj, 667, 176,
+  astro-ph/0701589
+
+\bibitem[{{Gebhardt} {et~al.}(2000){Gebhardt}, {Bender}, {Bower}, {Dressler},
+  {Faber}, {Filippenko}, {Green}, {Grillmair}, {Ho}, {Kormendy}, {Lauer},
+  {Magorrian}, {Pinkney}, {Richstone}, \& {Tremaine}}]{Gebhardt:00}
+{Gebhardt}, K., {Bender}, R., {Bower}, G., {et~al.} 2000, \apjl, 539, L13,
+  astro-ph/0006289
+
+\bibitem[{{Golse} \& {Kneib}(2002)}]{Golse:02}
+{Golse}, G., \& {Kneib}, J.-P. 2002, \aap, 390, 821, astro-ph/0112138
+
+\bibitem[{{Hezaveh} {et~al.}(2014){Hezaveh}, {Dalal}, {Holder}, {Kisner}, \&
+  {Kuhlen}}]{hezaveh:14a}
+{Hezaveh}, Y., {Dalal}, N., {Holder}, G., {Kisner}, T., \& {Kuhlen}, M. 2014,
+  ArXiv e-prints, 1403.2720
+
+\bibitem[{{Hezaveh}(2014)}]{hezaveh:14b}
+{Hezaveh}, Y.~D. 2014, \apjl, 791, L41, 1408.3631
+
+\bibitem[{{Hezaveh} \& {Holder}(2011)}]{hezaveh:11}
+{Hezaveh}, Y.~D., \& {Holder}, G.~P. 2011, \apj, 734, 52, 1010.0998
+
+\bibitem[{{Hezaveh} {et~al.}(2013){Hezaveh}, {Marrone}, {Fassnacht}, {Spilker},
+  {Vieira}, {Aguirre}, {Aird}, {Aravena}, {Ashby}, {Bayliss}, {Benson},
+  {Bleem}, {Bothwell}, {Brodwin}, {Carlstrom}, {Chang}, {Chapman}, {Crawford},
+  {Crites}, {De Breuck}, {de Haan}, {Dobbs}, {Fomalont}, {George}, {Gladders},
+  {Gonzalez}, {Greve}, {Halverson}, {High}, {Holder}, {Holzapfel}, {Hoover},
+  {Hrubes}, {Husband}, {Hunter}, {Keisler}, {Lee}, {Leitch}, {Lueker},
+  {Luong-Van}, {Malkan}, {McIntyre}, {McMahon}, {Mehl}, {Menten}, {Meyer},
+  {Mocanu}, {Murphy}, {Natoli}, {Padin}, {Plagge}, {Reichardt}, {Rest}, {Ruel},
+  {Ruhl}, {Sharon}, {Schaffer}, {Shaw}, {Shirokoff}, {Stalder}, {Staniszewski},
+  {Stark}, {Story}, {Vanderlinde}, {Wei{\ss}}, {Welikala}, \&
+  {Williamson}}]{hezaveh:13b}
+{Hezaveh}, Y.~D., {Marrone}, D.~P., {Fassnacht}, C.~D., {et~al.} 2013, \apj,
+  767, 132, 1303.2722
+
+\bibitem[{{Inada} {et~al.}(2008){Inada}, {Oguri}, {Falco}, {Broadhurst},
+  {Ofek}, {Kochanek}, {Sharon}, \& {Smith}}]{Inada:08}
+{Inada}, N., {Oguri}, M., {Falco}, E.~E., {et~al.} 2008, \pasj, 60, L27,
+  0808.1769
+
+\bibitem[{{Jackson}(2013)}]{Jackson:13}
+{Jackson}, N. 2013, Bulletin of the Astronomical Society of India, 41, 19,
+  1304.4172
+
+\bibitem[{{Keeton}(2003)}]{Keeton:03}
+{Keeton}, C.~R. 2003, \apj, 582, 17, astro-ph/0206243
+
+\bibitem[{{Kormendy} \& {Bender}(2009)}]{Kormendy:09}
+{Kormendy}, J., \& {Bender}, R. 2009, \apjl, 691, L142, 0901.3778
+
+\bibitem[{{Kormendy} \& {Ho}(2013)}]{Kormendy:13}
+{Kormendy}, J., \& {Ho}, L.~C. 2013, \araa, 51, 511, 1304.7762
+
+\bibitem[{{Kormendy} \& {Richstone}(1995)}]{Kormendy:95}
+{Kormendy}, J., \& {Richstone}, D. 1995, \araa, 33, 581
+
+\bibitem[{{Li} {et~al.}(2012){Li}, {Mao}, {Gao}, {Loeb}, \& {di
+  Stefano}}]{Li:12}
+{Li}, N., {Mao}, S., {Gao}, L., {Loeb}, A., \& {di Stefano}, R. 2012, \mnras,
+  419, 2424, 1110.0887
+
+\bibitem[{{Negrello} {et~al.}(2010){Negrello}, {Hopwood}, {De Zotti}, {Cooray},
+  {Verma}, {Bock}, {Frayer}, {Gurwell}, {Omont}, {Neri}, {Dannerbauer},
+  {Leeuw}, {Barton}, {Cooke}, {Kim}, {da Cunha}, {Rodighiero}, {Cox},
+  {Bonfield}, {Jarvis}, {Serjeant}, {Ivison}, {Dye}, {Aretxaga}, {Hughes},
+  {Ibar}, {Bertoldi}, {Valtchanov}, {Eales}, {Dunne}, {Driver}, {Auld},
+  {Buttiglione}, {Cava}, {Grady}, {Clements}, {Dariush}, {Fritz}, {Hill},
+  {Hornbeck}, {Kelvin}, {Lagache}, {Lopez-Caniego}, {Gonzalez-Nuevo}, {Maddox},
+  {Pascale}, {Pohlen}, {Rigby}, {Robotham}, {Simpson}, {Smith}, {Temi},
+  {Thompson}, {Woodgate}, {York}, {Aguirre}, {Beelen}, {Blain}, {Baker},
+  {Birkinshaw}, {Blundell}, {Bradford}, {Burgarella}, {Danese}, {Dunlop},
+  {Fleuren}, {Glenn}, {Harris}, {Kamenetzky}, {Lupu}, {Maddalena}, {Madore},
+  {Maloney}, {Matsuhara}, {Michaowski}, {Murphy}, {Naylor}, {Nguyen},
+  {Popescu}, {Rawlings}, {Rigopoulou}, {Scott}, {Scott}, {Seibert}, {Smail},
+  {Tuffs}, {Vieira}, {van der Werf}, \& {Zmuidzinas}}]{negrello:10}
+{Negrello}, M., {Hopwood}, R., {De Zotti}, G., {et~al.} 2010, Science, 330,
+  800, 1011.1255
+
+\bibitem[{{Rocha} {et~al.}(2013){Rocha}, {Peter}, {Bullock}, {Kaplinghat},
+  {Garrison-Kimmel}, {O{\~n}orbe}, \& {Moustakas}}]{Rocha:13}
+{Rocha}, M., {Peter}, A.~H.~G., {Bullock}, J.~S., {et~al.} 2013, \mnras, 430,
+  81, 1208.3025
+
+\bibitem[{{Thomas} {et~al.}(2014){Thomas}, {Saglia}, {Bender}, {Erwin}, \&
+  {Fabricius}}]{Thomas:14}
+{Thomas}, J., {Saglia}, R.~P., {Bender}, R., {Erwin}, P., \& {Fabricius}, M.
+  2014, \apj, 782, 39, 1311.3783
+
+\bibitem[{{Tremaine} {et~al.}(2002){Tremaine}, {Gebhardt}, {Bender}, {Bower},
+  {Dressler}, {Faber}, {Filippenko}, {Green}, {Grillmair}, {Ho}, {Kormendy},
+  {Lauer}, {Magorrian}, {Pinkney}, \& {Richstone}}]{Tremaine:02}
+{Tremaine}, S., {Gebhardt}, K., {Bender}, R., {et~al.} 2002, \apj, 574, 740,
+  astro-ph/0203468
+
+\bibitem[{{Vieira} {et~al.}(2010){Vieira}, {Crawford}, {Switzer}, {Ade},
+  {Aird}, {Ashby}, {Benson}, {Bleem}, {Brodwin}, {Carlstrom}, {Chang}, {Cho},
+  {Crites}, {de Haan}, {Dobbs}, {Everett}, {George}, {Gladders}, {Hall},
+  {Halverson}, {High}, {Holder}, {Holzapfel}, {Hrubes}, {Joy}, {Keisler},
+  {Knox}, {Lee}, {Leitch}, {Lueker}, {Marrone}, {McIntyre}, {McMahon}, {Mehl},
+  {Meyer}, {Mohr}, {Montroy}, {Padin}, {Plagge}, {Pryke}, {Reichardt}, {Ruhl},
+  {Schaffer}, {Shaw}, {Shirokoff}, {Spieler}, {Stalder}, {Staniszewski},
+  {Stark}, {Vanderlinde}, {Walsh}, {Williamson}, {Yang}, {Zahn}, \&
+  {Zenteno}}]{vieira:10}
+{Vieira}, J.~D., {Crawford}, T.~M., {Switzer}, E.~R., {et~al.} 2010, \apj, 719,
+  763, 0912.2338
+
+\bibitem[{{Vieira} {et~al.}(2013){Vieira}, {Marrone}, {Chapman}, {De Breuck},
+  {Hezaveh}, {Wei{$\beta$}}, {Aguirre}, {Aird}, {Aravena}, {Ashby}, {Bayliss},
+  {Benson}, {Biggs}, {Bleem}, {Bock}, {Bothwell}, {Bradford}, {Brodwin},
+  {Carlstrom}, {Chang}, {Crawford}, {Crites}, {de Haan}, {Dobbs}, {Fomalont},
+  {Fassnacht}, {George}, {Gladders}, {Gonzalez}, {Greve}, {Gullberg},
+  {Halverson}, {High}, {Holder}, {Holzapfel}, {Hoover}, {Hrubes}, {Hunter},
+  {Keisler}, {Lee}, {Leitch}, {Lueker}, {Luong-van}, {Malkan}, {McIntyre},
+  {McMahon}, {Mehl}, {Menten}, {Meyer}, {Mocanu}, {Murphy}, {Natoli}, {Padin},
+  {Plagge}, {Reichardt}, {Rest}, {Ruel}, {Ruhl}, {Sharon}, {Schaffer}, {Shaw},
+  {Shirokoff}, {Spilker}, {Stalder}, {Staniszewski}, {Stark}, {Story},
+  {Vanderlinde}, {Welikala}, \& {Williamson}}]{vieira:13}
+{Vieira}, J.~D., {Marrone}, D.~P., {Chapman}, S.~C., {et~al.} 2013, \nat, 495,
+  344, 1303.2723
+
+\bibitem[{{Wallington} \& {Narayan}(1993)}]{Wallington:93}
+{Wallington}, S., \& {Narayan}, R. 1993, \apj, 403, 517
+
+\bibitem[{{Wei{\ss}} {et~al.}(2013){Wei{\ss}}, {De Breuck}, {Marrone},
+  {Vieira}, {Aguirre}, {Aird}, {Aravena}, {Ashby}, {Bayliss}, {Benson},
+  {B{\'e}thermin}, {Biggs}, {Bleem}, {Bock}, {Bothwell}, {Bradford}, {Brodwin},
+  {Carlstrom}, {Chang}, {Chapman}, {Crawford}, {Crites}, {de Haan}, {Dobbs},
+  {Downes}, {Fassnacht}, {George}, {Gladders}, {Gonzalez}, {Greve},
+  {Halverson}, {Hezaveh}, {High}, {Holder}, {Holzapfel}, {Hoover}, {Hrubes},
+  {Husband}, {Keisler}, {Lee}, {Leitch}, {Lueker}, {Luong-Van}, {Malkan},
+  {McIntyre}, {McMahon}, {Mehl}, {Menten}, {Meyer}, {Murphy}, {Padin},
+  {Plagge}, {Reichardt}, {Rest}, {Rosenman}, {Ruel}, {Ruhl}, {Schaffer},
+  {Shirokoff}, {Spilker}, {Stalder}, {Staniszewski}, {Stark}, {Story},
+  {Vanderlinde}, {Welikala}, \& {Williamson}}]{Weiss:13}
+{Wei{\ss}}, A., {De Breuck}, C., {Marrone}, D.~P., {et~al.} 2013, \apj, 767,
+  88, 1303.2726
+
+\bibitem[{{Winn} {et~al.}(2004){Winn}, {Rusin}, \& {Kochanek}}]{Winn:04}
+{Winn}, J.~N., {Rusin}, D., \& {Kochanek}, C.~S. 2004, \nat, 427, 613,
+  astro-ph/0312136
+
+\bibitem[{{Zhang} {et~al.}(2007){Zhang}, {Jackson}, {Porcas}, \&
+  {Browne}}]{Zhang:07}
+{Zhang}, M., {Jackson}, N., {Porcas}, R.~W., \& {Browne}, I.~W.~A. 2007,
+  \mnras, 377, 1623, astro-ph/0703226
+
+\end{thebibliography}
 
 
 
