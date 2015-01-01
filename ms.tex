@@ -51,7 +51,9 @@ It is thought that during a merger, the SMBHs of the two merging galaxies form a
 Previous studies have shown that the core sizes in these galaxies scale with the mass of their SMBHs, in agreement with theoretical predictions \citep{Kormendy:09,Kormendy:13}. It should be emphasized that these black holes are expected to be present and may have larger masses than in comparable nearby galaxies \citep{Bennert:10}. Direct measurements, however have been limited to low redshifts, since both dynamical measurements to constrain the stellar and SMBH masses, and morphological measurements to constrain core sizes require very high physical resolutions. 
 
 
-Strong gravitational lensing is a powerful tool for probing the matter distribution in distant galaxies. Among other things, strong lenses have been used to constrain galaxy masses, density profiles, and abundance of dark matter subhalos \citep[e.g.,][]{dalal:02, Gavazzi:07, Bolton:08}. For double and quad image configurations, the theory of strong lensing predicts a third and a fifth image near the centers of lensing galaxies. Unlike the other lensed images, which are magnified, this image can be significantly \emph{demagnified}\footnote{approximately as $(\Sigma/\Sigma_{crit})^{-2}$, where $\Sigma$ is the surface density and $\Sigma_{crit}$ is the critical surface density}, making its detection difficult \citep[e.g.,][]{Jackson:13}.  It is well-understood that the magnification of the central images is very sensitive to the matter distribution in the innermost regions of lens galaxies: very steep density profiles significantly demagnify the central images, whereas cored or shallow profiles render them brighter (Figure \ref{fig1}). 
+Strong gravitational lensing is a powerful tool for probing the matter distribution in distant galaxies. Among other things, strong lenses have been used to constrain galaxy masses, density profiles, and abundance of dark matter subhalos \citep[e.g.,][]{dalal:02, Gavazzi:07, Bolton:08}. For double and quad image configurations, the theory of strong lensing predicts a third and a fifth image near the centers of lensing galaxies. 
+\blue{Realistic galaxy density profiles produce central images that are almost always \emph{demagnified}\footnote{approximately as $(\Sigma/\Sigma_{crit})^{-2}$, where $\Sigma$ is the surface density and $\Sigma_{crit}$ is the critical surface density}, making their detection difficult \citep[e.g.,][]{Jackson:13}.}  
+\red{Unlike the other lensed images, which are magnified, this image can be significantly \emph{demagnified}, making its detection difficult \citep[e.g.,][]{Jackson:13}.}  It is well-understood that the magnification of the central images is very sensitive to the matter distribution in the innermost regions of lens galaxies: very steep density profiles significantly demagnify the central images, whereas cored or shallow profiles render them brighter (Figure \ref{fig1}). 
 
 In addition to their low flux, the fact that central images coincide with the emission from lens galaxies makes their detection even harder. Distinguishing the central images from emission originating in the lens galaxies is extremely challenging.
 If observed in the optical, absorption in the central dense regions of the lens can make the central images even dimmer, while the photon noise from the lens emission further reduces the sensitivity. 
@@ -61,7 +63,7 @@ If observed in the optical, absorption in the central dense regions of the lens 
 
 The individual behavior and statistical properties of central images in lensed populations have been extensively studied \citep[e.g.,][]{Wallington:93, Evans:02, Keeton:03}. These studies show that central images could have a wide range of magnifications \citep[e.g.,][]{Keeton:03}. 
 Observational searches for these images have found a number of candidates. Although observations
-of central images in group and cluster lenses are not uncommon \citep[e.g.,][]{Inada:08}, only one secure detection of a central image of a galaxy-scale lens exists to date \citep{Winn:04}. To avoid the possibility of absorption in the lens, most searches have focused on lensed radio sources. The radio spectrum of candidate central images have been used to distinguish them from potential faint emission from the lens galaxies \citep[e.g.,][]{Zhang:07}.
+of central images in group and cluster lenses are not uncommon \citep[e.g.,][]{Inada:08}, only one secure detection of a central image of a galaxy-scale lens exists to date \citep{Winn:04}. To avoid the possibility of absorption in the lens, most searches have focused on lensed radio sources. The radio spectra of candidate central images have been used to distinguish them from potential faint emission from the lens galaxies \citep[e.g.,][]{Zhang:07}.
 
 A new large population of strong lenses has recently been discovered in mm-wave. These systems were initially detected as bright point sources in wide area mm/submm surveys \citep{vieira:10,negrello:10}. Follow-up observations have confirmed that they constitute a large population of strong lenses \citep{vieira:13, hezaveh:13b, bussmann:13}.
 In particular, high resolution ALMA followup observations of these sources have revealed that the background galaxies are dusty, starburst, high redshift galaxies, containing a wealth of cold molecular gas \citep{Weiss:13}.  These observations showed that the extreme brightness of the sources, in combination with the high sensitivity of ALMA, result in very high signal to noise observations\footnote{For example, the lens models in \citet{hezaveh:13b} were based on just $\sim50$ second long observations.}.
@@ -80,7 +82,7 @@ In contrast to lensed quasars, the sources are extended over hundreds of parsecs
 \includegraphics[trim= 10 0 0 0, clip, width=0.48\textwidth]{figures/f_02.eps}
 \centering
 \end{center}
-\caption{ Left panel shows the strongly lensed images of a background source, when the lensing potential is very steep and cuspy, resulting in large demagnification (and disappearance) of the central image.  The right panel shows images for the same lens parameters and a core of 400 pc. The red box is centered on the  central image.
+\caption{ Left panel shows the strongly lensed images of a background source \blue{with a Gaussian light profile (FWHM 1170 pc)}, when the lensing potential is very steep and cuspy, resulting in large demagnification (and disappearance) of the central image.  The right panel shows images for the same lens parameters and a core of 400 pc. The red box is centered on the  central image.
 \label{fig1}}
 \end{figure}
 
@@ -100,8 +102,8 @@ In contrast to lensed quasars, the sources are extended over hundreds of parsecs
 \section{Simulations}
 We generated lensed images of background sources, predicted ALMA visibilities, and used them to estimate the detection significance of central images for various parameters. We simulated observations of a high-$J$ CO line. The line is assumed to have a velocity integrated flux of 1 Jy km/s and a FWHM of 400 km/s, resulting in an average flux of 2.5 mJy over a 400 km/s band, a typical value for high redshift, dusty galaxies \citep{Bothwell:12}. 
 
-We modeled the lens potential as a sum of three components: dark matter, stellar population and a single central SMBH. The dark matter component was modeled as a singular power-law with a slope of 0.1, in agreement with the projected surface mass density of the NFW profile in the innermost regions \citep{Golse:02}. As  pointed out by \citet{Keeton:03}, due to its expected flatness in these regimes, the dark matter component has negligible influence on the central images (although models with dark matter cusps have been entertained). 
-The stellar population is modeled as a a cored power-law, $\Sigma(r)\propto (r^2+R_{\mathrm{core}}^2)^{\gamma_s}$. Figure \ref{fig2} shows the stellar component (red curve), dark matter component (black dashed curve) and the sum of the two (black solid curve). The grey dashed curves show a few examples of core-sersic models with parameters taken from \citet{Ferrarese:06}. Although the cored power-law model used in this work does not account for the slope of the stellar distribution below the core break, it is a close fit and a reasonable model to approximate the observed stellar light profiles in the inner few kpc. 
+We modeled the lens potential as a sum of three components: dark matter, stellar population and a single central SMBH. The dark matter component was modeled as \blue{an elliptical} singular power-law with a slope of 0.1, in agreement with the projected surface mass density of the NFW profile in the innermost regions \citep{Golse:02}. As  pointed out by \citet{Keeton:03}, due to its expected flatness in these regimes, the dark matter component has negligible influence on the central images (although models with dark matter cusps have been entertained). 
+The stellar population is modeled as \blue{an elliptical} cored power-law, $\Sigma(r)\propto (r^2+R_{\mathrm{core}}^2)^{\gamma_s}$. \blue{The deflection angles for elliptical cored power-law models were calculated using FastEll \citep{Barkana:98}.}  Figure \ref{fig2} shows the stellar component (red curve), dark matter component (black dashed curve) and the sum of the two (black solid curve). The grey dashed curves show a few examples of core-sersic models with parameters taken from \citet{Ferrarese:06}. Although the cored power-law model used in this work does not account for the slope of the stellar distribution below the core break, it is a close fit and a reasonable model to approximate the observed stellar light profiles in the inner few kpc. 
 The black hole was modeled as a simple point mass at the center of the potential. We assumed that all the three components are concentric, though we note that two- and three-black hole interactions may invalidate this assumption.
 The stellar and dark mass of the lens were normalized such that they each contain $1.5\times10^{11} M_{\odot}$ in a radius of 10 kpc. The resulting Einstein radius is of order 1 arcsec, in agreement with galaxy-galaxy strong lenses \citep[e.g.,][]{hezaveh:13b}.
 To predict the visibilities, we calculated the ALMA $uv$-coverage of a 10-$hr$ long observation (full array), using the $simobserve$ task of Common Astronomy Software Applications package, for an observing frequency of 150 GHz. 
@@ -109,7 +111,7 @@ The model visibilities were calculated by computing the 2D Fourier transform of 
 The noise was estimated using ALMA sensitivity calculator for a channel width of 400 km/s at 150 GHz. 
 
 
-For simulations where we calculated the detection significance of the demagnified image, we computed the magnification at every pixel in the image plane and generated maps with and without the the demagnified flux and evaluated the detection significance of the central image by comparing the two resulting visibility sets. In other simulations, where the constrains on parameters were needed, we used a Fisher analysis to compute the full covariance of all parameters. 
+For simulations where we calculated the detection significance of the demagnified image, we computed the magnification at every pixel in the image plane and generated maps with and without the demagnified flux and evaluated the detection significance of the central image by comparing the two resulting visibility sets. In other simulations, where the constrains on parameters were needed, we used a Fisher analysis to compute the full covariance of all parameters. 
 We used finite differencing of visibilities to calculate the gradients, and marginalize over the nuisance parameters (e.g., source position, lens ellipticity), assuming uniform priors, to calculate the posterior of the relevant parameters. 
 
 
@@ -140,7 +142,8 @@ with a Gaussian profile with an rms of 500 pc.  The red curve shows the effect o
 As seen in this figure, larger stellar cores result in brighter images. 
 In the absence of a massive black hole, when $\gamma_s=1.0$ and with a core size larger than 150 pc, such observations should be able to detect the central images with more than $5\sigma$ significance. For significantly shallower ($\gamma_s<0.8$) profiles and larger cores, the central image is \emph{magnified} and its detection should be trivial.  The magnification and flux of central images is also influenced by SMBHs.
 SMBHs demagnify the images on scales comparable to the size of their Einstein radii ($\sim30$ mas for a $2\times10^8M_{\odot}$ SMBH).
-The dashed curves in Figure \ref{fig:3} show the suppression of the fluxes of central images in presence of a $2\times10^8M_{\odot}$ SMBH.
+\red{The dashed curves in Figure \ref{fig:3} show the suppression of the fluxes of central images in presence of a $2\times10^8M_{\odot}$ SMBH.}
+\blue{A comparison of the thick black dashed curve to the solid black curve in Figure \ref{fig:3} shows the suppression of the fluxes of central images in presence of a $2\times10^8M_{\odot}$ SMBH.}
 
 As seen in Figure \ref{fig:3}, and as pointed out by \citet{Keeton:03}, plausible parameters predict  a wide range of magnifications for   central images. Although for some parameter combinations (e.g., $\gamma_{s}=1.1,$ $M_{\mathrm{BH}} = 2\times10^8 M_{\odot}$,$R_{\mathrm{core}}<200$ pc ) there is little chance of detecting the central images, they may be detectable over a non-negligible fraction of the parameter space.
 
@@ -162,7 +165,7 @@ More extended and intrinsically brighter emission lines such as C[II], the brigh
 
 \subsection{SMBHs and the core size}
 Here, we study the constraints that could be placed on the slope of the density profile, the size of the stellar core, and the mass of the SMBHs in such deep observations. 
-We performed a Fisher analysis to examine the constraints and parameter degeneracies in simulations in which the central images were detected, as well as those in which they were below the detection limit. All model parameters were included in the Fisher matrix, and nuisance parameters were later marginalize over (e.g. intrinsic source flux and position).  
+We performed a Fisher analysis to examine the constraints and parameter degeneracies in simulations in which the central images were detected, as well as those in which they were below the detection limit. All model parameters were included in the Fisher matrix, and nuisance parameters were later marginalized over (e.g. intrinsic source flux and position).  
  Figure \ref{fig:4} shows the parameter covariance for two simulations with different core radii (black contours:  $R_{\mathrm{core}}$=170 pc, red contours: $R_{\mathrm{core}}$=400 pc).
 We found that when $\gamma_s=1$, core sizes larger than 100 pc can be measured with high significance. As seen in Figure \ref{fig:4}, 
 for small cores, the mass of SMBH is highly degenerate with the core size: larger cores result in brighter images, whose flux can be supressed by a more massive SMBH.
@@ -226,221 +229,8 @@ Department of Energy under contract number DE-AC02-76SF00515.
 }
 
 \bibliographystyle{apj}
-%\bibliography{references}
+\bibliography{references}
 
-\begin{thebibliography}{36}
-\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
-
-\bibitem[{{Barnab{\`e}} {et~al.}(2014){Barnab{\`e}}, {Spiniello}, \&
-  {Koopmans}}]{Barnabe:14}
-{Barnab{\`e}}, M., {Spiniello}, C., \& {Koopmans}, L.~V.~E. 2014, ArXiv
-  e-prints, 1409.4197
-
-\bibitem[{{Barnes} \& {Hernquist}(1992)}]{Barnes:92}
-{Barnes}, J.~E., \& {Hernquist}, L. 1992, \araa, 30, 705
-
-\bibitem[{{Begelman} {et~al.}(1980){Begelman}, {Blandford}, \&
-  {Rees}}]{Begelman:80}
-{Begelman}, M.~C., {Blandford}, R.~D., \& {Rees}, M.~J. 1980, \nat, 287, 307
-
-\bibitem[{{Bennert} {et~al.}(2010){Bennert}, {Treu}, {Woo}, {Malkan}, {Le
-  Bris}, {Auger}, {Gallagher}, \& {Blandford}}]{Bennert:10}
-{Bennert}, V.~N., {Treu}, T., {Woo}, J.-H., {et~al.} 2010, \apj, 708, 1507,
-  0911.4107
-
-\bibitem[{{Bolton} {et~al.}(2008){Bolton}, {Treu}, {Koopmans}, {Gavazzi},
-  {Moustakas}, {Burles}, {Schlegel}, \& {Wayth}}]{Bolton:08}
-{Bolton}, A.~S., {Treu}, T., {Koopmans}, L.~V.~E., {et~al.} 2008, \apj, 684,
-  248, 0805.1932
-
-\bibitem[{{Bothwell} {et~al.}(2013){Bothwell}, {Smail}, {Chapman}, {Genzel},
-  {Ivison}, {Tacconi}, {Alaghband-Zadeh}, {Bertoldi}, {Blain}, {Casey}, {Cox},
-  {Greve}, {Lutz}, {Neri}, {Omont}, \& {Swinbank}}]{Bothwell:12}
-{Bothwell}, M.~S., {Smail}, I., {Chapman}, S.~C., {et~al.} 2013, \mnras, 429,
-  3047, 1205.1511
-
-\bibitem[{{Bussmann} {et~al.}(2013){Bussmann}, {P{\'e}rez-Fournon}, {Amber},
-  {Calanog}, {Gurwell}, {Dannerbauer}, {De Bernardis}, {Fu}, {Harris}, {Krips},
-  {Lapi}, {Maiolino}, {Omont}, {Riechers}, {Wardlow}, {Baker}, {Birkinshaw},
-  {Bock}, {Bourne}, {Clements}, {Cooray}, {De Zotti}, {Dunne}, {Dye}, {Eales},
-  {Farrah}, {Gavazzi}, {Gonz{\'a}lez Nuevo}, {Hopwood}, {Ibar}, {Ivison},
-  {Laporte}, {Maddox}, {Mart{\'{\i}}nez-Navajas}, {Michalowski}, {Negrello},
-  {Oliver}, {Roseboom}, {Scott}, {Serjeant}, {Smith}, {Smith}, {Streblyanska},
-  {Valiante}, {van der Werf}, {Verma}, {Vieira}, {Wang}, \&
-  {Wilner}}]{bussmann:13}
-{Bussmann}, R.~S., {P{\'e}rez-Fournon}, I., {Amber}, S., {et~al.} 2013, \apj,
-  779, 25, 1309.0836
-
-\bibitem[{{Dalal} \& {Kochanek}(2002)}]{dalal:02}
-{Dalal}, N., \& {Kochanek}, C.~S. 2002, \apj, 572, 25, astro-ph/0111456
-
-\bibitem[{{Ebisuzaki} {et~al.}(1991){Ebisuzaki}, {Makino}, \&
-  {Okumura}}]{Ebisuzaki:91}
-{Ebisuzaki}, T., {Makino}, J., \& {Okumura}, S.~K. 1991, \nat, 354, 212
-
-\bibitem[{{Evans} \& {Hunter}(2002)}]{Evans:02}
-{Evans}, N.~W., \& {Hunter}, C. 2002, \apj, 575, 68, astro-ph/0204206
-
-\bibitem[{{Ferrarese} \& {Merritt}(2000)}]{Ferrarese:00}
-{Ferrarese}, L., \& {Merritt}, D. 2000, \apjl, 539, L9, astro-ph/0006053
-
-\bibitem[{{Ferrarese} {et~al.}(2006){Ferrarese}, {C{\^o}t{\'e}}, {Jord{\'a}n},
-  {Peng}, {Blakeslee}, {Piatek}, {Mei}, {Merritt}, {Milosavljevi{\'c}},
-  {Tonry}, \& {West}}]{Ferrarese:06}
-{Ferrarese}, L., {C{\^o}t{\'e}}, P., {Jord{\'a}n}, A., {et~al.} 2006, \apjs,
-  164, 334, astro-ph/0602297
-
-\bibitem[{{Gavazzi} {et~al.}(2007){Gavazzi}, {Treu}, {Rhodes}, {Koopmans},
-  {Bolton}, {Burles}, {Massey}, \& {Moustakas}}]{Gavazzi:07}
-{Gavazzi}, R., {Treu}, T., {Rhodes}, J.~D., {et~al.} 2007, \apj, 667, 176,
-  astro-ph/0701589
-
-\bibitem[{{Gebhardt} {et~al.}(2000){Gebhardt}, {Bender}, {Bower}, {Dressler},
-  {Faber}, {Filippenko}, {Green}, {Grillmair}, {Ho}, {Kormendy}, {Lauer},
-  {Magorrian}, {Pinkney}, {Richstone}, \& {Tremaine}}]{Gebhardt:00}
-{Gebhardt}, K., {Bender}, R., {Bower}, G., {et~al.} 2000, \apjl, 539, L13,
-  astro-ph/0006289
-
-\bibitem[{{Golse} \& {Kneib}(2002)}]{Golse:02}
-{Golse}, G., \& {Kneib}, J.-P. 2002, \aap, 390, 821, astro-ph/0112138
-
-\bibitem[{{Hezaveh} {et~al.}(2014){Hezaveh}, {Dalal}, {Holder}, {Kisner}, \&
-  {Kuhlen}}]{hezaveh:14a}
-{Hezaveh}, Y., {Dalal}, N., {Holder}, G., {Kisner}, T., \& {Kuhlen}, M. 2014,
-  ArXiv e-prints, 1403.2720
-
-\bibitem[{{Hezaveh}(2014)}]{hezaveh:14b}
-{Hezaveh}, Y.~D. 2014, \apjl, 791, L41, 1408.3631
-
-\bibitem[{{Hezaveh} \& {Holder}(2011)}]{hezaveh:11}
-{Hezaveh}, Y.~D., \& {Holder}, G.~P. 2011, \apj, 734, 52, 1010.0998
-
-\bibitem[{{Hezaveh} {et~al.}(2013){Hezaveh}, {Marrone}, {Fassnacht}, {Spilker},
-  {Vieira}, {Aguirre}, {Aird}, {Aravena}, {Ashby}, {Bayliss}, {Benson},
-  {Bleem}, {Bothwell}, {Brodwin}, {Carlstrom}, {Chang}, {Chapman}, {Crawford},
-  {Crites}, {De Breuck}, {de Haan}, {Dobbs}, {Fomalont}, {George}, {Gladders},
-  {Gonzalez}, {Greve}, {Halverson}, {High}, {Holder}, {Holzapfel}, {Hoover},
-  {Hrubes}, {Husband}, {Hunter}, {Keisler}, {Lee}, {Leitch}, {Lueker},
-  {Luong-Van}, {Malkan}, {McIntyre}, {McMahon}, {Mehl}, {Menten}, {Meyer},
-  {Mocanu}, {Murphy}, {Natoli}, {Padin}, {Plagge}, {Reichardt}, {Rest}, {Ruel},
-  {Ruhl}, {Sharon}, {Schaffer}, {Shaw}, {Shirokoff}, {Stalder}, {Staniszewski},
-  {Stark}, {Story}, {Vanderlinde}, {Wei{\ss}}, {Welikala}, \&
-  {Williamson}}]{hezaveh:13b}
-{Hezaveh}, Y.~D., {Marrone}, D.~P., {Fassnacht}, C.~D., {et~al.} 2013, \apj,
-  767, 132, 1303.2722
-
-\bibitem[{{Inada} {et~al.}(2008){Inada}, {Oguri}, {Falco}, {Broadhurst},
-  {Ofek}, {Kochanek}, {Sharon}, \& {Smith}}]{Inada:08}
-{Inada}, N., {Oguri}, M., {Falco}, E.~E., {et~al.} 2008, \pasj, 60, L27,
-  0808.1769
-
-\bibitem[{{Jackson}(2013)}]{Jackson:13}
-{Jackson}, N. 2013, Bulletin of the Astronomical Society of India, 41, 19,
-  1304.4172
-
-\bibitem[{{Keeton}(2003)}]{Keeton:03}
-{Keeton}, C.~R. 2003, \apj, 582, 17, astro-ph/0206243
-
-\bibitem[{{Kormendy} \& {Bender}(2009)}]{Kormendy:09}
-{Kormendy}, J., \& {Bender}, R. 2009, \apjl, 691, L142, 0901.3778
-
-\bibitem[{{Kormendy} \& {Ho}(2013)}]{Kormendy:13}
-{Kormendy}, J., \& {Ho}, L.~C. 2013, \araa, 51, 511, 1304.7762
-
-\bibitem[{{Kormendy} \& {Richstone}(1995)}]{Kormendy:95}
-{Kormendy}, J., \& {Richstone}, D. 1995, \araa, 33, 581
-
-\bibitem[{{Li} {et~al.}(2012){Li}, {Mao}, {Gao}, {Loeb}, \& {di
-  Stefano}}]{Li:12}
-{Li}, N., {Mao}, S., {Gao}, L., {Loeb}, A., \& {di Stefano}, R. 2012, \mnras,
-  419, 2424, 1110.0887
-
-\bibitem[{{Negrello} {et~al.}(2010){Negrello}, {Hopwood}, {De Zotti}, {Cooray},
-  {Verma}, {Bock}, {Frayer}, {Gurwell}, {Omont}, {Neri}, {Dannerbauer},
-  {Leeuw}, {Barton}, {Cooke}, {Kim}, {da Cunha}, {Rodighiero}, {Cox},
-  {Bonfield}, {Jarvis}, {Serjeant}, {Ivison}, {Dye}, {Aretxaga}, {Hughes},
-  {Ibar}, {Bertoldi}, {Valtchanov}, {Eales}, {Dunne}, {Driver}, {Auld},
-  {Buttiglione}, {Cava}, {Grady}, {Clements}, {Dariush}, {Fritz}, {Hill},
-  {Hornbeck}, {Kelvin}, {Lagache}, {Lopez-Caniego}, {Gonzalez-Nuevo}, {Maddox},
-  {Pascale}, {Pohlen}, {Rigby}, {Robotham}, {Simpson}, {Smith}, {Temi},
-  {Thompson}, {Woodgate}, {York}, {Aguirre}, {Beelen}, {Blain}, {Baker},
-  {Birkinshaw}, {Blundell}, {Bradford}, {Burgarella}, {Danese}, {Dunlop},
-  {Fleuren}, {Glenn}, {Harris}, {Kamenetzky}, {Lupu}, {Maddalena}, {Madore},
-  {Maloney}, {Matsuhara}, {Michaowski}, {Murphy}, {Naylor}, {Nguyen},
-  {Popescu}, {Rawlings}, {Rigopoulou}, {Scott}, {Scott}, {Seibert}, {Smail},
-  {Tuffs}, {Vieira}, {van der Werf}, \& {Zmuidzinas}}]{negrello:10}
-{Negrello}, M., {Hopwood}, R., {De Zotti}, G., {et~al.} 2010, Science, 330,
-  800, 1011.1255
-
-\bibitem[{{Rocha} {et~al.}(2013){Rocha}, {Peter}, {Bullock}, {Kaplinghat},
-  {Garrison-Kimmel}, {O{\~n}orbe}, \& {Moustakas}}]{Rocha:13}
-{Rocha}, M., {Peter}, A.~H.~G., {Bullock}, J.~S., {et~al.} 2013, \mnras, 430,
-  81, 1208.3025
-
-\bibitem[{{Thomas} {et~al.}(2014){Thomas}, {Saglia}, {Bender}, {Erwin}, \&
-  {Fabricius}}]{Thomas:14}
-{Thomas}, J., {Saglia}, R.~P., {Bender}, R., {Erwin}, P., \& {Fabricius}, M.
-  2014, \apj, 782, 39, 1311.3783
-
-\bibitem[{{Tremaine} {et~al.}(2002){Tremaine}, {Gebhardt}, {Bender}, {Bower},
-  {Dressler}, {Faber}, {Filippenko}, {Green}, {Grillmair}, {Ho}, {Kormendy},
-  {Lauer}, {Magorrian}, {Pinkney}, \& {Richstone}}]{Tremaine:02}
-{Tremaine}, S., {Gebhardt}, K., {Bender}, R., {et~al.} 2002, \apj, 574, 740,
-  astro-ph/0203468
-
-\bibitem[{{Vieira} {et~al.}(2010){Vieira}, {Crawford}, {Switzer}, {Ade},
-  {Aird}, {Ashby}, {Benson}, {Bleem}, {Brodwin}, {Carlstrom}, {Chang}, {Cho},
-  {Crites}, {de Haan}, {Dobbs}, {Everett}, {George}, {Gladders}, {Hall},
-  {Halverson}, {High}, {Holder}, {Holzapfel}, {Hrubes}, {Joy}, {Keisler},
-  {Knox}, {Lee}, {Leitch}, {Lueker}, {Marrone}, {McIntyre}, {McMahon}, {Mehl},
-  {Meyer}, {Mohr}, {Montroy}, {Padin}, {Plagge}, {Pryke}, {Reichardt}, {Ruhl},
-  {Schaffer}, {Shaw}, {Shirokoff}, {Spieler}, {Stalder}, {Staniszewski},
-  {Stark}, {Vanderlinde}, {Walsh}, {Williamson}, {Yang}, {Zahn}, \&
-  {Zenteno}}]{vieira:10}
-{Vieira}, J.~D., {Crawford}, T.~M., {Switzer}, E.~R., {et~al.} 2010, \apj, 719,
-  763, 0912.2338
-
-\bibitem[{{Vieira} {et~al.}(2013){Vieira}, {Marrone}, {Chapman}, {De Breuck},
-  {Hezaveh}, {Wei{$\beta$}}, {Aguirre}, {Aird}, {Aravena}, {Ashby}, {Bayliss},
-  {Benson}, {Biggs}, {Bleem}, {Bock}, {Bothwell}, {Bradford}, {Brodwin},
-  {Carlstrom}, {Chang}, {Crawford}, {Crites}, {de Haan}, {Dobbs}, {Fomalont},
-  {Fassnacht}, {George}, {Gladders}, {Gonzalez}, {Greve}, {Gullberg},
-  {Halverson}, {High}, {Holder}, {Holzapfel}, {Hoover}, {Hrubes}, {Hunter},
-  {Keisler}, {Lee}, {Leitch}, {Lueker}, {Luong-van}, {Malkan}, {McIntyre},
-  {McMahon}, {Mehl}, {Menten}, {Meyer}, {Mocanu}, {Murphy}, {Natoli}, {Padin},
-  {Plagge}, {Reichardt}, {Rest}, {Ruel}, {Ruhl}, {Sharon}, {Schaffer}, {Shaw},
-  {Shirokoff}, {Spilker}, {Stalder}, {Staniszewski}, {Stark}, {Story},
-  {Vanderlinde}, {Welikala}, \& {Williamson}}]{vieira:13}
-{Vieira}, J.~D., {Marrone}, D.~P., {Chapman}, S.~C., {et~al.} 2013, \nat, 495,
-  344, 1303.2723
-
-\bibitem[{{Wallington} \& {Narayan}(1993)}]{Wallington:93}
-{Wallington}, S., \& {Narayan}, R. 1993, \apj, 403, 517
-
-\bibitem[{{Wei{\ss}} {et~al.}(2013){Wei{\ss}}, {De Breuck}, {Marrone},
-  {Vieira}, {Aguirre}, {Aird}, {Aravena}, {Ashby}, {Bayliss}, {Benson},
-  {B{\'e}thermin}, {Biggs}, {Bleem}, {Bock}, {Bothwell}, {Bradford}, {Brodwin},
-  {Carlstrom}, {Chang}, {Chapman}, {Crawford}, {Crites}, {de Haan}, {Dobbs},
-  {Downes}, {Fassnacht}, {George}, {Gladders}, {Gonzalez}, {Greve},
-  {Halverson}, {Hezaveh}, {High}, {Holder}, {Holzapfel}, {Hoover}, {Hrubes},
-  {Husband}, {Keisler}, {Lee}, {Leitch}, {Lueker}, {Luong-Van}, {Malkan},
-  {McIntyre}, {McMahon}, {Mehl}, {Menten}, {Meyer}, {Murphy}, {Padin},
-  {Plagge}, {Reichardt}, {Rest}, {Rosenman}, {Ruel}, {Ruhl}, {Schaffer},
-  {Shirokoff}, {Spilker}, {Stalder}, {Staniszewski}, {Stark}, {Story},
-  {Vanderlinde}, {Welikala}, \& {Williamson}}]{Weiss:13}
-{Wei{\ss}}, A., {De Breuck}, C., {Marrone}, D.~P., {et~al.} 2013, \apj, 767,
-  88, 1303.2726
-
-\bibitem[{{Winn} {et~al.}(2004){Winn}, {Rusin}, \& {Kochanek}}]{Winn:04}
-{Winn}, J.~N., {Rusin}, D., \& {Kochanek}, C.~S. 2004, \nat, 427, 613,
-  astro-ph/0312136
-
-\bibitem[{{Zhang} {et~al.}(2007){Zhang}, {Jackson}, {Porcas}, \&
-  {Browne}}]{Zhang:07}
-{Zhang}, M., {Jackson}, N., {Porcas}, R.~W., \& {Browne}, I.~W.~A. 2007,
-  \mnras, 377, 1623, astro-ph/0703226
-
-\end{thebibliography}
 
 
 
