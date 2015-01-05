@@ -24,7 +24,8 @@
 
 \begin{abstract}  
 \noindent
-We examine the prospects of detecting demagnified images of gravitational lenses in observations of strongly lensed mm-wave molecular emission lines with ALMA. We model the lensing galaxies as a superposition of a dark matter component, a stellar component, and a central supermassive black hole and assess the detectability of the central images for a range of relevant parameters (e.g., stellar core and black hole mass).
+We examine the prospects of detecting demagnified images of gravitational lenses in observations of strongly lensed mm-wave molecular emission lines with ALMA. 
+We model the lensing galaxies as a superposition of a dark matter component, a stellar component, and a central supermassive black hole and assess the detectability of the central images for a range of relevant parameters (e.g., stellar core and black hole mass).
 We find that over a large range of plausible parameters, future deep observations of lensed molecular lines with ALMA should enable  detection of the central images at $\gtrsim 3\sigma$ significance. We use a Fisher analysis to examine the  constraints that could be placed on these parameters in various scenarios and find that for large stellar cores, both the core size and the mass of the central SMBHs can be accurately measured. We also study the prospects for detecting binary SMBHs with such observations and find that only under rare conditions and with very long integrations ($\sim$40-hr) the masses of both SMBHs may be measured using the distortions of central images.
 
 
@@ -53,7 +54,8 @@ Previous studies have shown that the core sizes in these galaxies scale with the
 
 Strong gravitational lensing is a powerful tool for probing the matter distribution in distant galaxies. Among other things, strong lenses have been used to constrain galaxy masses, density profiles, and abundance of dark matter subhalos \citep[e.g.,][]{dalal:02, Gavazzi:07, Bolton:08}. For double and quad image configurations, the theory of strong lensing predicts a third and a fifth image near the centers of lensing galaxies. 
 \blue{Realistic galaxy density profiles produce central images that are almost always \emph{demagnified}\footnote{approximately as $(\Sigma/\Sigma_{crit})^{-2}$, where $\Sigma$ is the surface density and $\Sigma_{crit}$ is the critical surface density}, making their detection difficult \citep[e.g.,][]{Jackson:13}.}  
-\red{Unlike the other lensed images, which are magnified, this image can be significantly \emph{demagnified}, making its detection difficult \citep[e.g.,][]{Jackson:13}.}  It is well-understood that the magnification of the central images is very sensitive to the matter distribution in the innermost regions of lens galaxies: very steep density profiles significantly demagnify the central images, whereas cored or shallow profiles render them brighter (Figure \ref{fig1}). 
+%\red{Unlike the other lensed images, which are magnified, this image can be significantly \emph{demagnified}, making its detection difficult \citep[e.g.,][]{Jackson:13}.}
+ It is well-understood that the magnification of the central images is very sensitive to the matter distribution in the innermost regions of lens galaxies: very steep density profiles significantly demagnify the central images, whereas cored or shallow profiles render them brighter (Figure \ref{fig1}). 
 
 In addition to their low flux, the fact that central images coincide with the emission from lens galaxies makes their detection even harder. Distinguishing the central images from emission originating in the lens galaxies is extremely challenging.
 If observed in the optical, absorption in the central dense regions of the lens can make the central images even dimmer, while the photon noise from the lens emission further reduces the sensitivity. 
@@ -61,7 +63,7 @@ If observed in the optical, absorption in the central dense regions of the lens 
 
 
 
-The individual behavior and statistical properties of central images in lensed populations have been extensively studied \citep[e.g.,][]{Wallington:93, Evans:02, Keeton:03}. These studies show that central images could have a wide range of magnifications \citep[e.g.,][]{Keeton:03}. 
+The individual behavior and statistical properties of central images in lensed populations have been extensively studied \citep[e.g.,][]{Wallington:93, Mao:01, Evans:02, Keeton:03}. These studies show that central images could have a wide range of magnifications \citep[e.g.,][]{Keeton:03}, \blue{and that cuspy profiles (or SMBHs) can suppress the flux of the central images \citep[e.g.,][]{Bowman:04,Rusin:05,Mao:12}.}
 Observational searches for these images have found a number of candidates. Although observations
 of central images in group and cluster lenses are not uncommon \citep[e.g.,][]{Inada:08}, only one secure detection of a central image of a galaxy-scale lens exists to date \citep{Winn:04}. To avoid the possibility of absorption in the lens, most searches have focused on lensed radio sources. The radio spectra of candidate central images have been used to distinguish them from potential faint emission from the lens galaxies \citep[e.g.,][]{Zhang:07}.
 
@@ -142,12 +144,28 @@ with a Gaussian profile with an rms of 500 pc.  The red curve shows the effect o
 As seen in this figure, larger stellar cores result in brighter images. 
 In the absence of a massive black hole, when $\gamma_s=1.0$ and with a core size larger than 150 pc, such observations should be able to detect the central images with more than $5\sigma$ significance. For significantly shallower ($\gamma_s<0.8$) profiles and larger cores, the central image is \emph{magnified} and its detection should be trivial.  The magnification and flux of central images is also influenced by SMBHs.
 SMBHs demagnify the images on scales comparable to the size of their Einstein radii ($\sim30$ mas for a $2\times10^8M_{\odot}$ SMBH).
-\red{The dashed curves in Figure \ref{fig:3} show the suppression of the fluxes of central images in presence of a $2\times10^8M_{\odot}$ SMBH.}
+%\red{The dashed curves in Figure \ref{fig:3} show the suppression of the fluxes of central images in presence of a $2\times10^8M_{\odot}$ SMBH.}
 \blue{A comparison of the thick black dashed curve to the solid black curve in Figure \ref{fig:3} shows the suppression of the fluxes of central images in presence of a $2\times10^8M_{\odot}$ SMBH.}
 
 As seen in Figure \ref{fig:3}, and as pointed out by \citet{Keeton:03}, plausible parameters predict  a wide range of magnifications for   central images. Although for some parameter combinations (e.g., $\gamma_{s}=1.1,$ $M_{\mathrm{BH}} = 2\times10^8 M_{\odot}$,$R_{\mathrm{core}}<200$ pc ) there is little chance of detecting the central images, they may be detectable over a non-negligible fraction of the parameter space.
 
-We also find that the detection significance of the central images can significantly \emph{increase} for an extended source with a radius of 1 kpc compared to a point source. Since extended sources occupy a larger area of the source plane, which may cover regions with higher magnifications, the resulting flux can be larger than the flux of more compact sources. The solid blue curve in Figure \ref{fig:3} shows the increase in the flux of the demagnified image for a larger source (with a radius of 1 kpc). In contrast, the flux of a source with a radius of 250 pc can be severely supressed (dotted grey curve). 
+\begin{figure}
+\begin{center}
+\centering
+\includegraphics[trim= 0 0 0 0, clip, width=0.48\textwidth]{figures/f_06.eps}
+\centering
+\end{center}
+\vspace{-1mm}
+\caption{\blue{The two top panels show the magnification cross-sections of two sources with different sizes (left: 100 pc, right 500 pc in radius) behind a lens containing a black hole with a mass of $1\times 10^8 M_{\odot}$. The magnification at the central regions of the left panel approaches zero and the central image does not form (the color scale has been clipped at $10^{-2.5}$). The lower panel shows the magnification at the center (when the source is perfectly behind the lens) as a function of source size).}
+\label{figMu}}
+\vspace{-1.5mm}
+\end{figure}
+
+
+We also find that the detection significance of the central images can significantly \emph{increase} for an extended source with a radius of 1 kpc compared to a point source. Since extended sources occupy a larger area of the source plane, which may cover regions with higher magnifications, the resulting flux can be larger than the flux of more compact sources. 
+The solid blue curve in Figure \ref{fig:3} shows the increase in the flux of the demagnified image for a larger source (with a radius of 1 kpc). In contrast, the flux of a source with a radius of 250 pc can be severely supressed (dotted grey curve). 
+\blue{This effect is illustrated in Figure \ref{figMu} where the effects of source size on magnification are shown. The two top panels of Figure \ref{figMu} show the magnification cross-section (flux magnification as a function of source position behind the lens) for two sources with different sizes (left: 100 pc, right: 500 pc in radius). For a compact source (top left panel) in the central regions the magnification approaches zero and the central image does not form. For more extended sources, however, even when the source is exactly behind the lens, the large extent of the source allows covering higher magnification regions, increasing the total flux magnification.
+The bottom panel shows the magnification as a function of source size, for a source that is located on the lens axis.}
 As the source galaxies are undergoing prodigious star formation, these large source sizes are reasonable and in agreement with observations \citep{hezaveh:13b}.
 More extended and intrinsically brighter emission lines such as C[II], the brightest molecular line in high redshift galaxies, may therefore be the most ideal targets for such observations.
 
