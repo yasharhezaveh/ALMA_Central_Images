@@ -1,5 +1,6 @@
+
 We are grateful to the referee for careful reading of the 
-manuscript and useful suggestions.
+manuscript and helpful suggestions.
 
 ==================================================================================
 
@@ -66,8 +67,7 @@ What was the source size used to generate Figure 1?
 >> RESPONSE: The source has a Gaussian profile with FWHM of 1170 pc 
 >> (rms of 500 pc). We have added this information to the caption:
 
-" a background source with a Gaussian light profile (FWHM 
-$\sim1100$ pc)..."
+" a background source with a Gaussian light profile (FWHM 1170 pc)..."
 
 ==================================================================================
 
@@ -76,8 +76,18 @@ relation, but that is not discussed explicitly (perhaps because the
 effective velocity dispersion of the model galaxy is not 
 mentioned).
 
->> RESPONSE: 
+>> RESPONSE: For a lens galaxy with a sigma of 200 km/s the black hole
+mass on the M-sigma relation is about 2e8 Msun (from Kormendy & Ho 2013
+and McConnell et al. 2011). The giant elliptical strong lenses have typical
+velocity dispersions of  200 km/s (Sonnenfeld et al. 2013), so we think that 
+black holes in the 10^8 Msun mass range are plausible for these galaxies.
+We have added this information to the simulation section:
 
+"Lensing galaxies are typically massive ellipticals with velocity dispersions 
+of order 200 km/s (e.g., Sonnenfeld et al. 2013). From the M-σ relation, we predict
+that these galaxies should contain black holes with masses in excess 
+of 2 x 10^8Msun (e.g., Kormendy & Ho 2013). In our simulations we have chosen 
+black holes with masses of 1, 2, and 4 x 108 Msun ."
 ==================================================================================
 
 The analysis uses circular mass distributions. How would it be 
@@ -106,7 +116,15 @@ is steeper than 1/r, or if the SMBH exceeds a threshold in mass. If
 the black hole mass is below that threshold, there can actually be 
 more than one central image.
 
->> RESPONSE: 
+>> RESPONSE: We have tried to qualify this with the sentences that
+follow this description:
+
+"For double and quad image configurations, the theory of strong lensing 
+predicts a third and a fifth image near the centers of lensing galaxies. 
+However, realistic galaxy density profiles produce central images that are 
+almost always demagnified, making their detection difficult (e.g., Jackson 2013). 
+If the lens galaxies have cuspy central profiles with steep slopes or very 
+massive SMBHs, this central image may not form at all."
 
 ==================================================================================
 
@@ -140,18 +158,18 @@ images in presence of a 2e8 Msun SMBH."
 here the noun ("spectrum") is singular while the verb ("have") is 
 plural.
 
->> DONE
+>> Corrected
 
 ==================================================================================
 
 "generated maps with and without the the demagnified flux" -- 
 double "the".
 
->> DONE
+>> Corrected
 
 ==================================================================================
 
 "and nuisance parameters were later marginalize over" -- should be 
 "marginalized".
 
->> DONE
+>> Corrected
