@@ -1,0 +1,157 @@
+We are grateful to the referee for careful reading of the 
+manuscript and useful suggestions.
+
+==================================================================================
+
+The paper makes an interesting point that having extended sources 
+can significantly increase the detection significance because such 
+sources "occupy a larger area of the source plane, which may cover 
+regions with higher magnifications".
+
+I think it could be useful to see this point illustrated, perhaps 
+with a magnification map and a curve showing magnification as a 
+function of source size (at a given position).
+
+Also, the paper argues that central images can offer good 
+constraints on the core size and black hole mass.
+
+It would be nice to have some intuition about which image 
+properties provide the most information: position, brightness, 
+resolved shape, or all of the above?
+
+The text broaches this issue in Section 3.2 but does not go into 
+detail. In both of these cases, my personal preference would be to 
+have a more extended discussion (with figures) even if that means 
+the paper becomes too long for ApJL. I do want to emphasize that 
+this is a personal preference; the authors may be satisfied with 
+the level of the discussion in its present form.
+
+>> RESPONSE: We have added a figure (Figure 4) showing the magnification 
+>> cross-section for two sources with different sizes. We have also 
+>> added a few sentences to the text to explain this, as follows:
+
+"This effect is illustrated in Figure 4 where the effects of source 
+size on magnification are shown. The two top panels of Figure 4 
+show the source plane magnification (flux magnification as a 
+function of source position behind the lens) for two sources with 
+different sizes (left: 100 pc, right: 500 pc in radius). For a 
+compact source (top left panel) in the central regions the 
+magnification approaches zero and the central image does not form. 
+For more extended sources, however, even when the source is exactly 
+behind the lens, the large extent of the source allows the covering of 
+higher magnification regions, increasing the total flux 
+magnification. The bottom panel shows the magnification as a 
+function of source size, for a source that is located on the lens 
+axis."
+
+==================================================================================
+
+My second comment is that there is little discussion of existing 
+literature on gravitational lensing, central images, and 
+supermassive black holes. Here are a few papers that seem worthy of 
+mention (there may be others as well):
+
+- Mao, Witt & Koopmans, http://adsabs.harvard.edu/abs/2001MNRAS.323..301M
+- Bowman, Hewitt & Kiger, http://adsabs.harvard.edu/abs/2004ApJ...617...81B
+- Rusin, Keeton & Winn, http://adsabs.harvard.edu/abs/2005ApJ...627L..93R
+- Mao & Witt, http://adsabs.harvard.edu/abs/2012MNRAS.420..792M
+
+>> RESPONSE: The citations and a short description have been added 
+>> to the introduction.
+
+==================================================================================
+
+What was the source size used to generate Figure 1?
+
+>> RESPONSE: The source has a Gaussian profile with FWHM of 1170 pc 
+>> (rms of 500 pc). We have added this information to the caption:
+
+" a background source with a Gaussian light profile (FWHM 
+$\sim1100$ pc)..."
+
+==================================================================================
+
+How was the black hole mass chosen? I assume it follows the M-sigma 
+relation, but that is not discussed explicitly (perhaps because the 
+effective velocity dispersion of the model galaxy is not 
+mentioned).
+
+>> RESPONSE: 
+
+==================================================================================
+
+The analysis uses circular mass distributions. How would it be 
+affected by ellipticity and/or external shear?
+
+>> We thank the referee for pointing out the ambiguity of the text 
+>> about this. In fact, elliptical power-law models were used in 
+>> the calculations and the deflection angles were computed using 
+>> the FastEll code. We ran simulations with ellipticities of 0.2 
+>> and 0.4. We have added a few words to clarify this, as follows:
+
+"The stellar population is modeled as an elliptical cored 
+power-law. The deflection angles for elliptical cored power-law 
+models were calculated using FastEll (Barkana 1998)."
+ 
+==================================================================================
+
+"For double and quad image configurations, the theory of strong 
+lensing predicts a third and a fifth image near the centers of 
+lensing galaxies." Strictly speaking, that statement applies only 
+under certain conditions. Even if those conditions are thought to 
+apply to realistic galaxy models, it is important to understand 
+that the theoretical statement is nuanced. For example, there is no 
+central image if the surface mass density has a central cusp that 
+is steeper than 1/r, or if the SMBH exceeds a threshold in mass. If 
+the black hole mass is below that threshold, there can actually be 
+more than one central image.
+
+>> RESPONSE: 
+
+==================================================================================
+
+"Unlike the other lensed images, which are magnified..." It is 
+possible for non-central images to be demagnified. The only true 
+guarantee from lens theory is that at least one image has a 
+magnification greater than unity.
+
+>> RESPONSE: We have modified the wording to "Realistic galaxy 
+>> density profiles produce central images that are almost always 
+>> demagnified, making their detection difficult."
+
+==================================================================================
+
+"The dashed curves in Figure 3 show the suppression of the fluxes 
+of central images in presence of a 2e8 Msun SMBH." There is only 
+one relevant dashed curve in Figure 3, and it shows a case with no 
+black hole. The suppression effect is therefore seen not in the 
+dashed curve itself, but in a comparison of the solid curves to the 
+dashed curve.
+
+>> RESPONSE: We have changed the wording to clarify this, as follows: 
+
+"A comparison of the thick black dashed curve to the solid black 
+curve in Figure 3 shows the suppression of the fluxes of central 
+images in presence of a 2e8 Msun SMBH."
+
+==================================================================================
+
+"The radio spectrum of candidate central images have been used" -- 
+here the noun ("spectrum") is singular while the verb ("have") is 
+plural.
+
+>> DONE
+
+==================================================================================
+
+"generated maps with and without the the demagnified flux" -- 
+double "the".
+
+>> DONE
+
+==================================================================================
+
+"and nuisance parameters were later marginalize over" -- should be 
+"marginalized".
+
+>> DONE
