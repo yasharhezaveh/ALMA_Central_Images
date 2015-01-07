@@ -22,12 +22,25 @@
 \author{Yashar D. Hezaveh, Philip J. Marshall, Roger D. Blandford}  
 \affil{Kavli Institute for Particle Astrophysics and Cosmology, Stanford University, Stanford, CA, USA}
 
-\begin{abstract}  
-\noindent
-We examine the prospects of detecting demagnified images of gravitational lenses in observations of strongly lensed mm-wave molecular emission lines with ALMA. 
-We model the lensing galaxies as a superposition of a dark matter component, a stellar component, and a central supermassive black hole and assess the detectability of the central images for a range of relevant parameters (e.g., stellar core and black hole mass).
-We find that over a large range of plausible parameters, future deep observations of lensed molecular lines with ALMA should enable  detection of the central images at $\gtrsim 3\sigma$ significance. We use a Fisher analysis to examine the  constraints that could be placed on these parameters in various scenarios and find that for large stellar cores, both the core size and the mass of the central SMBHs can be accurately measured. We also study the prospects for detecting binary SMBHs with such observations and find that only under rare conditions and with very long integrations ($\sim$40-hr) the masses of both SMBHs may be measured using the distortions of central images.
+\begin{abstract} 
 
+\noindent We examine the prospects of detecting demagnified images 
+of gravitational lenses in observations of strongly lensed mm-wave 
+molecular emission lines with ALMA. We model the lensing galaxies 
+as a superposition of a dark matter component, a stellar component, 
+and a central supermassive black hole and assess the detectability 
+of the central images for a range of relevant parameters (e.g., 
+stellar core and black hole mass). We find that over a large range 
+of plausible parameters, future deep observations of lensed 
+molecular lines with ALMA should enable detection of the central 
+images at $\gtrsim 3\sigma$ significance. We use a Fisher analysis 
+to examine the constraints that could be placed on these parameters 
+in various scenarios and find that for large stellar cores, both 
+the core size and the mass of the central SMBHs can be accurately 
+measured. We also study the prospects for detecting binary SMBHs 
+with such observations and find that only under rare conditions and 
+with very long integrations ($\sim$40-hr) the masses of both SMBHs 
+may be measured using the distortions of central images.
 
 \end{abstract}
 
@@ -40,6 +53,7 @@ galaxies: formation}
 
 
 \section{introduction}
+
 Probing the matter distribution in the innermost kpc of galaxies can answer key questions about super-massive black holes (SMBH), galaxy formation, and dark matter. It is now established that almost every massive galaxy harbors a SMBH at its center with a mass that strongly correlates with the mass of the host galaxy \citep{Kormendy:95,Ferrarese:00,Gebhardt:00,Tremaine:02}.
 In addition, the distribution of stellar populations in central regions of galaxies contains information about their past merger histories and SMBH-stellar population interactions \citep[e.g.,][]{Barnes:92,Ebisuzaki:91,Barnabe:14}.  Various dark matter models also predict different structures for the central regions of dark matter halos \citep[e.g.,][]{Rocha:13}.  Mapping the matter density in the central regions of galaxies can thus shed light on various astrophysical phenomena.
 
@@ -52,10 +66,27 @@ It is thought that during a merger, the SMBHs of the two merging galaxies form a
 Previous studies have shown that the core sizes in these galaxies scale with the mass of their SMBHs, in agreement with theoretical predictions \citep{Kormendy:09,Kormendy:13}. It should be emphasized that these black holes are expected to be present and may have larger masses than in comparable nearby galaxies \citep{Bennert:10}. Direct measurements, however have been limited to low redshifts, since both dynamical measurements to constrain the stellar and SMBH masses, and morphological measurements to constrain core sizes require very high physical resolutions. 
 
 
-Strong gravitational lensing is a powerful tool for probing the matter distribution in distant galaxies. Among other things, strong lenses have been used to constrain galaxy masses, density profiles, and abundance of dark matter subhalos \citep[e.g.,][]{dalal:02, Gavazzi:07, Bolton:08}. For double and quad image configurations, the theory of strong lensing predicts a third and a fifth image near the centers of lensing galaxies. 
-\blue{However, realistic galaxy density profiles produce central images that are almost always \emph{demagnified}\footnote{approximately as $(\Sigma/\Sigma_{crit})^{-2}$, where $\Sigma$ is the surface density and $\Sigma_{crit}$ is the critical surface density}, making their detection difficult \citep[e.g.,][]{Jackson:13}. If the lens galaxies have cuspy central profiles with steep slopes or very massive SMBHs, this central image may not form at all.}  
+Strong gravitational lensing is a powerful tool for probing the 
+matter distribution in distant galaxies. Among other things, strong 
+lenses have been used to constrain galaxy masses, density profiles, 
+and abundance of dark matter subhalos \citep[e.g.,][]{dalal:02, 
+Gavazzi:07, Bolton:08}. For double and quad image configurations, 
+the theory of strong lensing predicts a third and a fifth image 
+near the centers of lensing galaxies.
+\blue{However, realistic galaxy density profiles produce central 
+images that are almost always 
+\emph{demagnified},\footnote{approximately as 
+$(\Sigma/\Sigma_{crit})^{-2}$, where $\Sigma$ is the surface 
+density and $\Sigma_{crit}$ is the critical surface density.} 
+making their detection difficult \citep[e.g.,][]{Jackson:13}. If 
+the lens galaxies have cuspy central profiles with steep slopes or 
+very massive SMBHs, this central image may not form at all.}
 %\red{Unlike the other lensed images, which are magnified, this image can be significantly \emph{demagnified}, making its detection difficult \citep[e.g.,][]{Jackson:13}.}
- It is well-understood that the magnification of the central images is very sensitive to the matter distribution in the innermost regions of lens galaxies: very steep density profiles significantly demagnify the central images, whereas cored or shallow profiles render them brighter (Figure \ref{fig1}). 
+It is well-understood that the magnification of the central images 
+is very sensitive to the matter distribution in the innermost 
+regions of lens galaxies: very steep density profiles significantly 
+demagnify the central images, whereas cored or shallow profiles 
+render them brighter (Figure \ref{fig1}).
 
 In addition to their low flux, the fact that central images coincide with the emission from lens galaxies makes their detection even harder. Distinguishing the central images from emission originating in the lens galaxies is extremely challenging.
 If observed in the optical, absorption in the central dense regions of the lens can make the central images even dimmer, while the photon noise from the lens emission further reduces the sensitivity. 

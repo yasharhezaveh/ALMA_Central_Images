@@ -1,6 +1,7 @@
 
 We are grateful to the referee for careful reading of the 
-manuscript and helpful suggestions.
+manuscript and helpful suggestions. We have addressed each of their 
+points, highlighting the changes to the manuscript in blue.
 
 ==================================================================================
 
@@ -14,11 +15,10 @@ with a magnification map and a curve showing magnification as a
 function of source size (at a given position).
 
 Also, the paper argues that central images can offer good 
-constraints on the core size and black hole mass.
-
-It would be nice to have some intuition about which image 
-properties provide the most information: position, brightness, 
-resolved shape, or all of the above?
+constraints on the core size and black hole mass. It would be nice 
+to have some intuition about which image properties provide the 
+most information: position, brightness, resolved shape, or all of 
+the above?
 
 The text broaches this issue in Section 3.2 but does not go into 
 detail. In both of these cases, my personal preference would be to 
@@ -77,17 +77,20 @@ effective velocity dispersion of the model galaxy is not
 mentioned).
 
 >> RESPONSE: For a lens galaxy with a sigma of 200 km/s the black hole
-mass on the M-sigma relation is about 2e8 Msun (from Kormendy & Ho 2013
-and McConnell et al. 2011). The giant elliptical strong lenses have typical
-velocity dispersions of  200 km/s (Sonnenfeld et al. 2013), so we think that 
-black holes in the 10^8 Msun mass range are plausible for these galaxies.
-We have added this information to the simulation section:
+>> mass on the M-sigma relation is about 2e8 Msun (from Kormendy & Ho 
+>> 2013 and McConnell et al. 2011). The giant elliptical strong lenses 
+>> have typical velocity dispersions of 200 km/s (Sonnenfeld et al. 
+>> 2013), so we think that black holes in the 10^8 Msun mass range are 
+>> plausible for these galaxies. We have added this information to the 
+>> simulation section:
 
-"Lensing galaxies are typically massive ellipticals with velocity dispersions 
-of order 200 km/s (e.g., Sonnenfeld et al. 2013). From the M-σ relation, we predict
-that these galaxies should contain black holes with masses in excess 
-of 2 x 10^8Msun (e.g., Kormendy & Ho 2013). In our simulations we have chosen 
-black holes with masses of 1, 2, and 4 x 108 Msun ."
+"Lensing galaxies are typically massive ellipticals with velocity 
+dispersions of order 200 km/s (e.g., Sonnenfeld et al. 2013). From 
+the M-sigma relation, we predict that these galaxies should contain 
+black holes with masses in excess of 2 x 10^8 Msun (e.g., Kormendy & 
+Ho 2013). In our simulations we have chosen black holes with masses 
+of 1, 2, and 4 x 10^8 Msun."
+
 ==================================================================================
 
 The analysis uses circular mass distributions. How would it be 
@@ -117,13 +120,14 @@ the black hole mass is below that threshold, there can actually be
 more than one central image.
 
 >> RESPONSE: We have tried to qualify this with the sentences that
-follow this description:
+follow this description in the introduction:
 
-"For double and quad image configurations, the theory of strong lensing 
-predicts a third and a fifth image near the centers of lensing galaxies. 
-However, realistic galaxy density profiles produce central images that are 
-almost always demagnified, making their detection difficult (e.g., Jackson 2013). 
-If the lens galaxies have cuspy central profiles with steep slopes or very 
+"For double and quad image configurations, the theory of strong 
+lensing predicts a third and a fifth image near the centers of 
+lensing galaxies. However, realistic galaxy density profiles 
+produce central images that are almost always demagnified, making 
+their detection difficult (e.g., Jackson 2013). If the lens 
+galaxies have cuspy central profiles with steep slopes or very 
 massive SMBHs, this central image may not form at all."
 
 ==================================================================================
